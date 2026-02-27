@@ -15,10 +15,10 @@ export default function AboutIntroSection() {
             <div className="relative">
               <div className="relative aspect-[4/3] rounded-lg overflow-hidden">
                 <Image
-                  src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=900&q=80"
+                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80"
                   alt="Sede BREXD"
                   fill
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
