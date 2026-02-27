@@ -47,16 +47,16 @@ const CATEGORY_ICONS: Record<string, React.ReactNode> = {
 };
 
 const CATEGORY_LABELS: Record<string, string> = {
-  "global-trade": "Global Trade",
-  engineering: "Engineering",
-  agribusiness: "Agribusiness",
-  tech: "Tech & Innovation",
-  company: "Company News",
+  "global-trade": "Comércio Global",
+  engineering: "Engenharia",
+  agribusiness: "Agronegócio",
+  tech: "Tecnologia e Inovação",
+  company: "Notícias da Empresa",
 };
 
 function formatDate(dateStr: string): string {
   const date = new Date(dateStr + "T00:00:00");
-  return date.toLocaleDateString("en-US", {
+  return date.toLocaleDateString("pt-BR", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -103,17 +103,17 @@ export default function BlogPostPage() {
       <section className="py-40 text-center">
         <div className="mx-auto max-w-[1280px] px-6 lg:px-10">
           <h1 className="text-4xl font-black text-brand-navy">
-            Post Not Found
+            Post Não Encontrado
           </h1>
           <p className="mt-4 text-gray-500">
-            The blog post you are looking for does not exist.
+            O post que você está procurando não existe.
           </p>
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 mt-8 px-6 py-3 bg-brand-navy text-white font-semibold rounded-lg hover:bg-brand-navy-light transition-colors"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Blog
+            Voltar ao Blog
           </Link>
         </div>
       </section>
@@ -153,7 +153,7 @@ export default function BlogPostPage() {
               className="inline-flex items-center gap-2 text-sm text-white/50 hover:text-white/80 transition-colors mb-8"
             >
               <ArrowLeft className="w-4 h-4" />
-              Back to All Posts
+              Voltar para Todos os Posts
             </Link>
           </ScrollReveal>
 
@@ -219,7 +219,7 @@ export default function BlogPostPage() {
                   </span>
                   <span className="flex items-center gap-1.5">
                     <Clock className="w-4 h-4" />
-                    {post.readTime} min read
+                    {post.readTime} min de leitura
                   </span>
                 </div>
               </div>
@@ -258,7 +258,7 @@ export default function BlogPostPage() {
                 <div className="flex items-center gap-4">
                   <span className="flex items-center gap-2 text-sm font-semibold text-gray-500">
                     <Share2 className="w-4 h-4" />
-                    Share this article
+                    Compartilhar este artigo
                   </span>
                   <div className="flex items-center gap-2">
                     <button
@@ -303,7 +303,7 @@ export default function BlogPostPage() {
                         {post.author.name}
                       </p>
                       <p className="text-sm text-gray-500">
-                        {post.author.role} at BREXD
+                        {post.author.role} na BREXD
                       </p>
                     </div>
                   </div>
@@ -321,7 +321,7 @@ export default function BlogPostPage() {
                     className="flex items-center gap-2 text-sm font-semibold text-brand-navy hover:text-seg-technology transition-colors"
                   >
                     <ArrowLeft className="w-4 h-4" />
-                    All Posts
+                    Todos os Posts
                   </Link>
                 </ScrollReveal>
 
@@ -330,7 +330,7 @@ export default function BlogPostPage() {
                   <ScrollReveal delay={0.1}>
                     <div>
                       <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">
-                        Related Articles
+                        Artigos Relacionados
                       </h3>
                       <div className="space-y-3">
                         {relatedPosts.map((relPost) => (
@@ -345,7 +345,7 @@ export default function BlogPostPage() {
                 <ScrollReveal delay={0.2}>
                   <div>
                     <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-4">
-                      Categories
+                      Categorias
                     </h3>
                     <div className="space-y-2">
                       {Object.entries(CATEGORY_LABELS).map(([key, label]) => (
@@ -392,17 +392,17 @@ export default function BlogPostPage() {
         <div className="relative mx-auto max-w-[1280px] px-6 lg:px-10 text-center">
           <ScrollReveal>
             <h2 className="text-3xl md:text-5xl font-black text-white">
-              Ready to Work with BREXD?
+              Pronto para Trabalhar com a BREXD?
             </h2>
             <p className="mt-6 text-lg text-white/60 max-w-xl mx-auto">
-              Connect with our team to explore how we can support your
-              international trade, engineering, and agribusiness goals.
+              Conecte-se com nossa equipe para explorar como podemos apoiar seus
+              objetivos de comércio internacional, engenharia e agronegócio.
             </p>
             <Link
               href="/contact"
               className="group inline-flex items-center gap-2 mt-10 px-10 py-5 bg-brand-gold text-brand-navy font-bold text-lg rounded-xl hover:bg-brand-gold-light transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
-              Contact Us
+              Fale Conosco
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Link>
           </ScrollReveal>

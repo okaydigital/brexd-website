@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import {
   ArrowRight,
@@ -19,12 +18,12 @@ import { cn } from "@/lib/utils";
 import { getBlogPosts, type BlogPost } from "@/lib/blog-data";
 
 const CATEGORIES = [
-  { key: "all", label: "All" },
-  { key: "global-trade", label: "Global Trade" },
-  { key: "engineering", label: "Engineering" },
-  { key: "agribusiness", label: "Agribusiness" },
-  { key: "tech", label: "Tech & Innovation" },
-  { key: "company", label: "Company News" },
+  { key: "all", label: "Todos" },
+  { key: "global-trade", label: "Comércio Global" },
+  { key: "engineering", label: "Engenharia" },
+  { key: "agribusiness", label: "Agronegócio" },
+  { key: "tech", label: "Tecnologia e Inovação" },
+  { key: "company", label: "Notícias da Empresa" },
 ] as const;
 
 const CATEGORY_COLORS: Record<string, string> = {
@@ -52,16 +51,16 @@ const CATEGORY_ICONS: Record<string, React.ReactNode> = {
 };
 
 const CATEGORY_LABELS: Record<string, string> = {
-  "global-trade": "Global Trade",
-  engineering: "Engineering",
-  agribusiness: "Agribusiness",
-  tech: "Tech & Innovation",
-  company: "Company News",
+  "global-trade": "Comércio Global",
+  engineering: "Engenharia",
+  agribusiness: "Agronegócio",
+  tech: "Tecnologia e Inovação",
+  company: "Notícias da Empresa",
 };
 
 function formatDate(dateStr: string): string {
   const date = new Date(dateStr + "T00:00:00");
-  return date.toLocaleDateString("en-US", {
+  return date.toLocaleDateString("pt-BR", {
     year: "numeric",
     month: "long",
     day: "numeric",
@@ -107,7 +106,7 @@ function FeaturedPost({ post }: { post: BlogPost }) {
               {/* Label */}
               <div className="mt-4 flex items-center gap-2">
                 <span className="px-2 py-0.5 bg-brand-gold/20 text-brand-gold rounded text-xs font-bold uppercase tracking-wider">
-                  Featured
+                  Destaque
                 </span>
               </div>
 
@@ -133,13 +132,13 @@ function FeaturedPost({ post }: { post: BlogPost }) {
                 </span>
                 <span className="flex items-center gap-1.5">
                   <Clock className="w-4 h-4" />
-                  {post.readTime} min read
+                  {post.readTime} min de leitura
                 </span>
               </div>
 
               {/* CTA */}
               <div className="mt-8 inline-flex items-center gap-2 text-brand-gold font-semibold group-hover:gap-3 transition-all">
-                Read Full Article
+                Ler Artigo Completo
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </div>
             </div>
@@ -284,14 +283,15 @@ export default function BlogPage() {
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight">
               Insights{" "}
               <span className="text-gradient-gold">&</span>{" "}
-              Analysis
+              Análises
             </h1>
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
             <p className="mt-6 text-base md:text-lg text-white/50 max-w-2xl mx-auto leading-relaxed">
-              Expert perspectives on global trade, engineering innovation,
-              agribusiness trends, and technology from the BREXD leadership team.
+              Perspectivas especializadas sobre comércio global, inovação em
+              engenharia, tendências do agronegócio e tecnologia pela equipe de
+              liderança da BREXD.
             </p>
           </ScrollReveal>
         </div>
@@ -336,7 +336,7 @@ export default function BlogPage() {
           {filteredPosts.length === 0 && (
             <div className="text-center py-20">
               <p className="text-gray-400 text-lg">
-                No posts found in this category.
+                Nenhum post encontrado nesta categoria.
               </p>
             </div>
           )}
@@ -358,17 +358,17 @@ export default function BlogPage() {
         <div className="relative mx-auto max-w-[1280px] px-6 lg:px-10 text-center">
           <ScrollReveal>
             <h2 className="text-3xl md:text-5xl font-black text-white">
-              Stay Ahead of the Market
+              Fique à Frente do Mercado
             </h2>
             <p className="mt-6 text-lg text-white/60 max-w-xl mx-auto">
-              Subscribe to receive our latest insights on global trade,
-              engineering, and agribusiness directly in your inbox.
+              Receba nossos últimos insights sobre comércio global, engenharia e
+              agronegócio diretamente no seu e-mail.
             </p>
             <Link
               href="/contact"
               className="group inline-flex items-center gap-2 mt-10 px-10 py-5 bg-brand-gold text-brand-navy font-bold text-lg rounded-xl hover:bg-brand-gold-light transition-all hover:scale-[1.02] active:scale-[0.98]"
             >
-              Get in Touch
+              Fale Conosco
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </Link>
           </ScrollReveal>
