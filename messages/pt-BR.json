@@ -1,0 +1,271 @@
+{
+  "metadata": {
+    "title": "BREXD | Comercio Global, Engenharia e Tecnologia",
+    "description": "Empresa multinacional conectando Brasil, EUA e China atraves de solucoes em exportacao, importacao, engenharia, agronegocio e tecnologia."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre",
+    "segments": "Segmentos",
+    "projects": "Projetos",
+    "partners": "Parceiros",
+    "blog": "Insights",
+    "contact": "Contato",
+    "language": "Idioma",
+    "getInTouch": "Fale Conosco"
+  },
+  "segments": {
+    "export": "Exportacao",
+    "import": "Importacao",
+    "engineering": "Engenharia",
+    "agribusiness": "Agronegocio",
+    "technology": "Tecnologia"
+  },
+  "taglines": {
+    "home": "Solucoes Globais",
+    "export": "Comercio Global",
+    "import": "Abastecimento Global",
+    "engineering": "Engenharia e Construtora",
+    "agribusiness": "Agronegocio",
+    "technology": "Tecnologia e Inovacao",
+    "about": "Nossa Historia",
+    "projects": "Nossos Projetos",
+    "blog": "Insights",
+    "contact": "Fale Conosco"
+  },
+  "hero": {
+    "headlines": {
+      "line1": "Conectando Mercados",
+      "line2": "Entre Continentes",
+      "rotating": ["Comercio Global", "Engenharia", "Agronegocio", "Tecnologia", "Inovacao"]
+    },
+    "subtitle": "Unindo Brasil, Estados Unidos e China atraves de solucoes integradas em comercio, engenharia, agronegocio e tecnologia.",
+    "cta_primary": "Conheca Nossos Segmentos",
+    "cta_secondary": "Fale Conosco",
+    "scroll": "Role para explorar"
+  },
+  "stats": {
+    "years": "Anos de Experiencia",
+    "offices": "Escritorios Globais",
+    "projects": "Projetos Entregues",
+    "countries": "Paises Atendidos",
+    "team": "Colaboradores",
+    "revenue": "Receita Anual"
+  },
+  "home": {
+    "segments_title": "Nossos Segmentos",
+    "segments_subtitle": "Cinco divisoes integradas impulsionando o crescimento global em diferentes industrias e continentes.",
+    "presence_title": "Presenca Global",
+    "presence_subtitle": "Estrategicamente posicionados em tres continentes para atender nossos clientes em todo o mundo.",
+    "partners_title": "Confianca dos Lideres do Setor",
+    "partners_subtitle": "Trabalhamos em parceria com as empresas mais reconhecidas do mundo em todos os nossos segmentos.",
+    "testimonials_title": "O Que Nossos Parceiros Dizem",
+    "cta_title": "Pronto para Crescer Globalmente?",
+    "cta_subtitle": "Parceria com a BREXD e desbloqueie novas oportunidades entre continentes.",
+    "cta_button": "Iniciar uma Conversa",
+    "blog_title": "Ultimos Insights",
+    "blog_subtitle": "Analises especializadas e perspectivas do setor da nossa equipe global.",
+    "blog_viewAll": "Ver Todos os Artigos"
+  },
+  "about": {
+    "hero_title": "Nossa Historia",
+    "hero_subtitle": "28 anos conectando mercados, construindo infraestrutura e impulsionando inovacao entre continentes.",
+    "hero_badge": "Desde 1997",
+    "hero_stat_years": "Anos de Experiencia",
+    "hero_stat_continents": "Continentes",
+    "hero_stat_team": "Colaboradores",
+    "hero_stat_revenue": "Receita Anual",
+    "history_title": "Nossa Trajetoria",
+    "timeline": {
+      "1997": "Fundada em Sao Paulo, Brasil, como uma pequena empresa de comercio focada em conectar exportadores brasileiros com mercados internacionais.",
+      "1997_detail": "Ricardo Brenner lancou a BREXD com a visao de conectar produtores brasileiros a demanda global, comecando com commodities agricolas.",
+      "2001": "Concluiu a primeira operacao de importacao da China, estabelecendo um corredor comercial estrategico Asia-Brasil.",
+      "2001_detail": "Reconheceu o imenso potencial da manufatura chinesa e comecou a importar equipamentos industriais e eletronicos para distribuidores brasileiros.",
+      "2004": "Divisao de Engenharia e Construcao lancada, expandindo para projetos de infraestrutura no Brasil.",
+      "2004_detail": "Aproveitou nossa expertise em comercio para fornecer materiais e gerenciar a construcao de terminais portuarios e instalacoes logisticas.",
+      "2007": "Abriu escritorio em Miami para servir como hub das Americas, fortalecendo compliance e capacidades de comercio internacional.",
+      "2007_detail": "O escritorio de Miami proporcionou acesso estrategico aos mercados norte-americanos, infraestrutura bancaria e de conformidade regulatoria.",
+      "2010": "Expandiu para o agronegocio com operacoes diretas de comercio de commodities, conectando fazendas a mercados globais.",
+      "2010_detail": "Parceria com grandes cooperativas agricolas no Brasil, facilitando exportacoes de soja, cafe e acucar para Asia e Europa.",
+      "2013": "Estabeleceu escritorio em Shanghai, criando presenca direta no maior ecossistema de manufatura do mundo.",
+      "2013_detail": "O escritorio de Shanghai permitiu sourcing direto, controle de qualidade e gestao logistica para nossas crescentes operacoes de importacao.",
+      "2016": "Divisao de Tecnologia lancada, trazendo solucoes de transformacao digital para industrias tradicionais.",
+      "2016_detail": "Comecou a desenvolver plataformas proprietarias para rastreamento de cadeia de suprimentos, monitoramento agricola e gestao de projetos de engenharia.",
+      "2018": "Atingiu a primeira operacao totalmente integrada combinando comercio, engenharia e tecnologia em um unico projeto.",
+      "2018_detail": "Entregou um projeto de terminal portuario de $200M que incluiu equipamentos chineses importados, construcao brasileira e tecnologia de monitoramento customizada.",
+      "2020": "Atingiu $1B em operacoes anuais, consolidando posicao como grande plataforma multinacional.",
+      "2020_detail": "Apesar dos desafios globais, nosso modelo integrado se mostrou resiliente, com operacoes diversificadas em multiplos segmentos e geografias.",
+      "2022": "Obteve certificacoes ISO 9001 e ISO 14001, formalizando nosso compromisso com qualidade e padroes ambientais.",
+      "2022_detail": "As certificacoes cobriram todos os tres escritorios e cinco segmentos de negocios, garantindo praticas consistentes de qualidade e sustentabilidade globalmente.",
+      "2024": "Lancou plataforma digital proprietaria de rastreamento para visibilidade em tempo real da cadeia de suprimentos em todas as operacoes.",
+      "2024_detail": "A plataforma integra sensores IoT, imagens de satelite e analytics de IA para fornecer visibilidade de ponta a ponta da origem ao destino.",
+      "2025": "Atingiu $3,2B em receita com uma equipe de 350+ profissionais em tres continentes.",
+      "2025_detail": "Posicionada para o proximo capitulo de crescimento com capacidades tecnologicas expandidas, novas entradas de mercado e equipe de lideranca fortalecida."
+    },
+    "mission_title": "Missao",
+    "mission_text": "Conectar mercados, construir infraestrutura e impulsionar inovacao entre continentes para gerar crescimento sustentavel para nossos parceiros e comunidades.",
+    "vision_title": "Visao",
+    "vision_text": "Ser a plataforma multinacional mais confiavel conectando America Latina, America do Norte e Asia atraves de solucoes integradas em comercio, engenharia, agronegocio e tecnologia.",
+    "values_title": "Nossos Valores",
+    "values": {
+      "integrity": { "title": "Integridade", "text": "Operacoes transparentes em todos os mercados" },
+      "excellence": { "title": "Excelencia", "text": "Qualidade sem concessoes em cada projeto" },
+      "innovation": { "title": "Inovacao", "text": "Solucoes tecnologicas para industrias tradicionais" },
+      "sustainability": { "title": "Sustentabilidade", "text": "Crescimento responsavel que beneficia comunidades" },
+      "global": { "title": "Mentalidade Global", "text": "Inteligencia cultural em cada interacao" }
+    },
+    "team_title": "Equipe de Lideranca",
+    "team_subtitle": "Uma equipe diversificada de veteranos da industria conduzindo as operacoes globais da BREXD.",
+    "team": {
+      "ricardo": {
+        "name": "Ricardo Brenner",
+        "title": "CEO e Fundador",
+        "bio": "28 anos liderando a BREXD de uma pequena empresa de comercio paulistana a uma multinacional de $3,2B. A visao de Ricardo de solucoes integradas intercontinentais transformou como empresas operam alem de fronteiras."
+      },
+      "catherine": {
+        "name": "Catherine Mitchell",
+        "title": "Diretora de Operacoes",
+        "bio": "Ex-socia da McKinsey com 18 anos em operacoes globais. Catherine supervisiona as operacoes diarias em todos os cinco segmentos e tres escritorios, impulsionando excelencia operacional."
+      },
+      "wei": {
+        "name": "Wei Zhang",
+        "title": "VP Operacoes Asia",
+        "bio": "15 anos de experiencia no comercio China-America Latina. Wei lidera nosso escritorio em Shanghai e gerencia relacionamentos com mais de 200 parceiros de manufatura na Asia."
+      },
+      "ana": {
+        "name": "Ana Paula Ferreira",
+        "title": "Diretora Financeira",
+        "bio": "Ex-VP do Goldman Sachs com profunda expertise em financas internacionais, credito comercial e gestao de risco cambial em mercados emergentes."
+      },
+      "marcus": {
+        "name": "Marcus Thompson",
+        "title": "VP Engenharia e Construcao",
+        "bio": "Engenheiro licenciado com 20 anos em infraestrutura. Marcus supervisionou $2B+ em projetos de construcao incluindo terminais portuarios, plantas de processamento e instalacoes logisticas."
+      },
+      "juliana": {
+        "name": "Juliana Santos",
+        "title": "VP Tecnologia e Inovacao",
+        "bio": "Engenheira formada pelo MIT que construiu a divisao de tecnologia da BREXD do zero. Juliana lidera o desenvolvimento de nossas plataformas digitais proprietarias e solucoes com IA."
+      },
+      "diego": {
+        "name": "Diego Ramirez",
+        "title": "VP Comercial",
+        "bio": "Fluente em cinco idiomas com relacionamentos profundos em 18 paises. Diego lidera nossa equipe global de vendas e gerencia parcerias estrategicas mundialmente."
+      },
+      "luciana": {
+        "name": "Dra. Luciana Motta",
+        "title": "Diretora de Compliance e Juridico",
+        "bio": "Especialista em direito comercial internacional com PhD pela USP. Luciana garante que a BREXD opere nos mais altos padroes de conformidade regulatoria em todas as jurisdicoes."
+      }
+    },
+    "offices_title": "Nossos Escritorios",
+    "offices_subtitle": "Estrategicamente posicionados em tres continentes para atender nossos clientes em todo o mundo.",
+    "offices_since": "Desde",
+    "offices": {
+      "sp": {
+        "city": "Sao Paulo",
+        "country": "Brasil",
+        "role": "Sede Global",
+        "description": "Centro administrativo principal abrigando engenharia, operacoes de agronegocio, desenvolvimento tecnologico e lideranca executiva."
+      },
+      "miami": {
+        "city": "Miami",
+        "country": "Estados Unidos",
+        "role": "Hub de Operacoes Americas",
+        "description": "Hub de comercio internacional, centro de compliance e porta de entrada para mercados da America do Norte e America Latina."
+      },
+      "shanghai": {
+        "city": "Shanghai",
+        "country": "China",
+        "role": "Centro de Operacoes Asia",
+        "description": "Centro de sourcing na Asia, operacoes de controle de qualidade, gestao logistica e porta de entrada para mercados chineses e asiaticos."
+      }
+    },
+    "certifications_title": "Certificacoes e Premios",
+    "certifications_subtitle": "Reconhecidos globalmente por nosso compromisso com qualidade, seguranca, sustentabilidade e excelencia no ambiente de trabalho.",
+    "certifications": {
+      "iso9001": { "name": "ISO 9001", "label": "Gestao da Qualidade" },
+      "iso14001": { "name": "ISO 14001", "label": "Gestao Ambiental" },
+      "iso45001": { "name": "ISO 45001", "label": "Saude e Seguranca" },
+      "iso27001": { "name": "ISO 27001", "label": "Seguranca da Informacao" },
+      "leed": { "name": "LEED", "label": "Construcao Sustentavel" },
+      "gptw": { "name": "GPTW", "label": "Melhores Empresas para Trabalhar" }
+    }
+  },
+  "contact": {
+    "title": "Fale Conosco",
+    "subtitle": "Pronto para explorar como a BREXD pode ajudar seu negocio a crescer globalmente? Adorariamos ouvir de voce.",
+    "form": {
+      "name": "Nome Completo",
+      "email": "Email",
+      "company": "Empresa",
+      "segment": "Segmento de Interesse",
+      "message": "Mensagem",
+      "submit": "Enviar Mensagem",
+      "success": "Mensagem enviada com sucesso! Retornaremos em ate 24 horas.",
+      "selectSegment": "Selecione um segmento"
+    },
+    "offices_title": "Nossos Escritorios"
+  },
+  "blog": {
+    "title": "Insights e Analises",
+    "subtitle": "Perspectivas especializadas sobre comercio global, engenharia, agronegocio e tecnologia da nossa equipe de lideres do setor.",
+    "readMore": "Ler Artigo",
+    "minRead": "min de leitura",
+    "categories": {
+      "all": "Todos",
+      "global-trade": "Comercio Global",
+      "engineering": "Engenharia",
+      "agribusiness": "Agronegocio",
+      "tech": "Tecnologia e Inovacao",
+      "company": "Noticias da Empresa"
+    },
+    "related": "Artigos Relacionados",
+    "share": "Compartilhar este artigo"
+  },
+  "projects": {
+    "title": "Nossos Projetos",
+    "subtitle": "Mais de 500 projetos entregues em cinco segmentos e tres continentes.",
+    "filterAll": "Todos os Segmentos",
+    "viewProject": "Ver Projeto",
+    "details": {
+      "client": "Cliente",
+      "value": "Valor do Projeto",
+      "duration": "Duracao",
+      "location": "Localizacao",
+      "year": "Ano"
+    }
+  },
+  "partners": {
+    "title": "Nossos Parceiros e Clientes",
+    "subtitle": "Construindo relacionamentos duradouros com lideres do setor ao redor do mundo.",
+    "categories": {
+      "all": "Todos",
+      "clients": "Clientes",
+      "partners": "Parceiros Estrategicos",
+      "suppliers": "Fornecedores"
+    }
+  },
+  "footer": {
+    "company": "Empresa",
+    "resources": "Recursos",
+    "contact": "Contato",
+    "tagline": "Conectando mercados, construindo futuros.",
+    "newsletter_title": "Fique Atualizado",
+    "newsletter_placeholder": "Digite seu email",
+    "newsletter_button": "Inscrever-se",
+    "copyright": "© 2026 BREXD. Todos os direitos reservados.",
+    "privacy": "Politica de Privacidade",
+    "terms": "Termos de Uso"
+  },
+  "loading": {
+    "text": "Carregando..."
+  },
+  "common": {
+    "learnMore": "Saiba Mais",
+    "viewAll": "Ver Todos",
+    "backToHome": "Voltar ao Inicio",
+    "notFound": "Pagina Nao Encontrada",
+    "notFoundText": "A pagina que voce procura nao existe ou foi movida."
+  }
+}
