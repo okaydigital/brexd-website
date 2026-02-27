@@ -11,7 +11,7 @@ const segments = [
   {
     title: "Exportação",
     desc: "Gestão completa de operações de exportação com foco em containers. Coordenamos embarques de mercadorias brasileiras para mais de 18 países, com despacho aduaneiro, consolidação de cargas e rastreamento porta a porta.",
-    image: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=900&q=80",
     href: "/segments/export" as const,
     stat: "8.200+",
     statLabel: "containers/ano",
@@ -21,7 +21,7 @@ const segments = [
   {
     title: "Importação",
     desc: "Importação estratégica de insumos industriais, maquinário e bens de consumo via containers dos principais hubs da China, Europa e América do Norte, com nacionalização e entrega no destino final.",
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80",
     href: "/segments/import" as const,
     stat: "4.100+",
     statLabel: "containers/ano",
@@ -31,7 +31,7 @@ const segments = [
   {
     title: "Engenharia",
     desc: "Produção e fornecimento de insumos asfálticos para obras rodoviárias, além de locação e operação de máquinas pesadas — escavadeiras, motoniveladoras, rolos compactadores — para grandes projetos de infraestrutura.",
-    image: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
     href: "/segments/engineering" as const,
     stat: "2.400 km",
     statLabel: "de rodovias atendidas",
@@ -41,7 +41,7 @@ const segments = [
   {
     title: "Agronegócio",
     desc: "Atuação integrada na cadeia do agro: produção e distribuição de fertilizantes para grandes lavouras e operação de frigoríficos de aves com capacidade de abate e processamento para exportação.",
-    image: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=900&q=80",
     href: "/segments/agribusiness" as const,
     stat: "860k ton",
     statLabel: "fertilizantes + proteína",
@@ -51,7 +51,7 @@ const segments = [
   {
     title: "Tecnologia",
     desc: "Fabricação, importação e distribuição de patinetes elétricos e scooters para o mercado latino-americano. Rede própria de assistência técnica e fornecimento de peças originais em todo o Brasil.",
-    image: "https://images.unsplash.com/photo-1593764592116-bfb2a97c642a?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80",
     href: "/segments/technology" as const,
     stat: "35k+",
     statLabel: "unidades distribuídas",

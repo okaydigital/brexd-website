@@ -263,19 +263,19 @@ export default function BlogPostPage() {
                   <div className="flex items-center gap-2">
                     <button
                       className="w-10 h-10 rounded-lg bg-gray-100 hover:bg-[#0077B5] hover:text-white text-gray-500 flex items-center justify-center transition-all"
-                      aria-label="Share on LinkedIn"
+                      aria-label="Compartilhar no LinkedIn"
                     >
                       <Linkedin className="w-4 h-4" />
                     </button>
                     <button
                       className="w-10 h-10 rounded-lg bg-gray-100 hover:bg-[#1DA1F2] hover:text-white text-gray-500 flex items-center justify-center transition-all"
-                      aria-label="Share on Twitter"
+                      aria-label="Compartilhar no Twitter"
                     >
                       <Twitter className="w-4 h-4" />
                     </button>
                     <button
                       className="w-10 h-10 rounded-lg bg-gray-100 hover:bg-brand-navy hover:text-white text-gray-500 flex items-center justify-center transition-all"
-                      aria-label="Share via Email"
+                      aria-label="Compartilhar por Email"
                     >
                       <Mail className="w-4 h-4" />
                     </button>

@@ -158,7 +158,7 @@ export default function Header() {
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className={cn("lg:hidden p-2", showDark ? "text-white" : "text-gray-700")}
-          aria-label="Toggle menu"
+          aria-label="Alternar menu"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>

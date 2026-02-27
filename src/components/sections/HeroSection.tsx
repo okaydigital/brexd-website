@@ -8,7 +8,7 @@ import { ArrowRight } from "lucide-react";
 const slides = [
   {
     video: "https://videos.pexels.com/video-files/1093662/1093662-hd_1920_1080_30fps.mp4",
-    poster: "https://images.unsplash.com/photo-1605745341112-85968b19335b?w=1920&q=80",
+    poster: "https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=1920&q=80",
     tag: "Exportação & Importação",
     title: "Movimentamos mais de",
     highlight: "12 mil containers",
@@ -20,7 +20,7 @@ const slides = [
   },
   {
     video: "https://videos.pexels.com/video-files/4430419/4430419-uhd_2560_1440_24fps.mp4",
-    poster: "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?w=1920&q=80",
+    poster: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
     tag: "Engenharia & Infraestrutura",
     title: "Fornecemos insumos para",
     highlight: "2.400 km de rodovias",
@@ -32,7 +32,7 @@ const slides = [
   },
   {
     video: "https://videos.pexels.com/video-files/3370949/3370949-hd_1920_1080_25fps.mp4",
-    poster: "https://images.unsplash.com/photo-1574943320219-553eb213f72d?w=1920&q=80",
+    poster: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&q=80",
     tag: "Agronegócio",
     title: "Processamos",
     highlight: "860 mil toneladas",
@@ -44,7 +44,7 @@ const slides = [
   },
   {
     video: "https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_25fps.mp4",
-    poster: "https://images.unsplash.com/photo-1593764592116-bfb2a97c642a?w=1920&q=80",
+    poster: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80",
     tag: "Tecnologia & Mobilidade",
     title: "Mais de",
     highlight: "35 mil scooters",

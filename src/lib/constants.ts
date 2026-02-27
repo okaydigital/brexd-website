@@ -46,7 +46,7 @@ export const SEGMENTS = {
 export const OFFICES = [
   {
     city: "Sao Paulo",
-    country: "Brazil",
+    country: "Brasil",
     role: "Sede Global",
     address: "Av. Brigadeiro Faria Lima, 3477 - 14th Floor, Itaim Bibi",
     phone: "+55 (11) 3045-8800",
@@ -56,7 +56,7 @@ export const OFFICES = [
   },
   {
     city: "Miami",
-    country: "USA",
+    country: "EUA",
     role: "Operações Américas",
     address: "1395 Brickell Avenue, Suite 800, Miami, FL 33131",
     phone: "+1 (305) 555-0147",

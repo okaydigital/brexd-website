@@ -11,7 +11,7 @@ const offices = [
     role: "Sede Global",
     year: "1997",
     team: "180+",
-    image: "https://images.unsplash.com/photo-1554232456-8727aae0cfa4?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1543722530-d2c3201371e7?w=800&q=80",
     desc: "Centro administrativo, engenharia, agronegócio e hub de tecnologia.",
   },
   {
@@ -20,7 +20,7 @@ const offices = [
     role: "Hub Américas",
     year: "2007",
     team: "85+",
-    image: "https://images.unsplash.com/photo-1514214246283-d427a95c5d2f?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=800&q=80",
     desc: "Hub de comércio internacional e compliance para as Américas.",
   },
   {
@@ -29,7 +29,7 @@ const offices = [
     role: "Operações Ásia",
     year: "2013",
     team: "85+",
-    image: "https://images.unsplash.com/photo-1538428494232-9c0d8a3ab403?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1474181628-7c5a8a2f5a5d?w=800&q=80",
     desc: "Centro de sourcing, logística e porta de entrada para a Ásia.",
   },
 ];

@@ -125,7 +125,7 @@ export default function Timeline() {
                           backgroundColor: milestone.color,
                           ...(isActive ? { ringColor: milestone.color } : {}),
                         }}
-                        aria-label={`View ${milestone.year} milestone`}
+                        aria-label={`Ver marco de ${milestone.year}`}
                       />
                     </div>
 

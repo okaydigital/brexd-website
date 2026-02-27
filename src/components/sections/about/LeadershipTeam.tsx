@@ -117,7 +117,7 @@ export default function LeadershipTeam() {
                         setExpanded(isExpanded ? null : leader.key)
                       }
                       className="mt-4 w-full flex items-center justify-center gap-1 text-xs text-gray-400 hover:text-gray-600 transition-colors"
-                      aria-label={isExpanded ? "Hide bio" : "Show bio"}
+                      aria-label={isExpanded ? "Ocultar bio" : "Mostrar bio"}
                     >
                       <span>{isExpanded ? "Menos" : "Mais"}</span>
                       <motion.div
@@ -144,7 +144,7 @@ export default function LeadershipTeam() {
                             <a
                               href="#"
                               className="p-2 rounded-lg bg-gray-50 hover:bg-gray-100 transition-colors"
-                              aria-label="LinkedIn profile"
+                              aria-label="Perfil do LinkedIn"
                             >
                               <Linkedin
                                 className="w-4 h-4"

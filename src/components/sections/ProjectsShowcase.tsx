@@ -12,7 +12,7 @@ const projects = [
     segment: "Exportação & Importação",
     title: "Operação Container LATAM — Rota Santos-Shanghai-Miami",
     desc: "Estruturação de corredor logístico triangular para movimentação de 4.800 containers por semestre entre Brasil, China e Estados Unidos, com consolidação e desconsolidação em terminais próprios.",
-    image: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=900&q=80",
     stats: [
       { label: "Volume", value: "9.600 TEUs" },
       { label: "Rota", value: "3 continentes" },
@@ -24,7 +24,7 @@ const projects = [
     segment: "Engenharia",
     title: "Pavimentação BR-163 — Trecho Mato Grosso",
     desc: "Fornecimento de 48 mil toneladas de massa asfáltica e operação de frota de máquinas pesadas para pavimentação de 180 km da BR-163, incluindo terraplanagem, drenagem e sinalização.",
-    image: "https://images.unsplash.com/photo-1590496793929-36417d3117de?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=900&q=80",
     stats: [
       { label: "Extensão", value: "180 km" },
       { label: "Máquinas", value: "62 unidades" },
@@ -36,7 +36,7 @@ const projects = [
     segment: "Agronegócio",
     title: "Planta de Fertilizantes — Complexo Araguaia",
     desc: "Implantação de unidade de mistura e granulação de fertilizantes NPK com capacidade de 360 mil toneladas/ano, integrada a terminal ferroviário para distribuição nacional.",
-    image: "https://images.unsplash.com/photo-1500595046743-cd271d694d30?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=900&q=80",
     stats: [
       { label: "Capacidade", value: "360k ton/ano" },
       { label: "Área", value: "85.000 m²" },
@@ -48,7 +48,7 @@ const projects = [
     segment: "Agronegócio",
     title: "Frigorífico de Aves — Unidade Cascavel",
     desc: "Construção e operação de frigorífico com capacidade de abate de 320 mil aves/dia, certificação SIF e habilitação para exportação para mercados árabes e asiáticos.",
-    image: "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1604848698030-c434ba08ece1?w=900&q=80",
     stats: [
       { label: "Capacidade", value: "320k aves/dia" },
       { label: "Mercados", value: "14 países" },
@@ -60,7 +60,7 @@ const projects = [
     segment: "Tecnologia",
     title: "Distribuição de Scooters Elétricos — Projeto MoveGreen",
     desc: "Importação, montagem e distribuição de 35 mil patinetes e scooters elétricos para operadores de micromobilidade em 12 capitais brasileiras, com rede de assistência técnica própria.",
-    image: "https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=900&q=80",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=900&q=80",
     stats: [
       { label: "Unidades", value: "35.000+" },
       { label: "Cidades", value: "12 capitais" },
