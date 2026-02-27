@@ -1,0 +1,626 @@
+{
+  "metadata": {
+    "title": "BREXD | Global Trade, Engineering & Technology",
+    "description": "Multinational company connecting Brazil, the USA, and China through solutions in export, import, engineering, agribusiness, and technology."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "segments": "Segments",
+    "projects": "Projects",
+    "partners": "Partners",
+    "blog": "Insights",
+    "contact": "Contact",
+    "language": "Language",
+    "getInTouch": "Get in Touch",
+    "export": "Export",
+    "import": "Import",
+    "engineering": "Engineering",
+    "agribusiness": "Agribusiness",
+    "technology": "Technology"
+  },
+  "segments": {
+    "export": "Export",
+    "import": "Import",
+    "engineering": "Engineering",
+    "agribusiness": "Agribusiness",
+    "technology": "Technology"
+  },
+  "taglines": {
+    "home": "Global Solutions",
+    "export": "Global Trade",
+    "import": "Global Sourcing",
+    "engineering": "Engineering & Construction",
+    "agribusiness": "Agribusiness",
+    "technology": "Technology & Innovation",
+    "about": "Our Story",
+    "projects": "Our Projects",
+    "blog": "Insights",
+    "contact": "Get in Touch"
+  },
+  "hero": {
+    "contactCta": "Get in Touch",
+    "slides": {
+      "0": {
+        "tag": "Export & Import",
+        "title": "We move over",
+        "highlight": "12,000 containers",
+        "titleEnd": "per year across 3 continents",
+        "desc": "Integrated export and import operations with full container management, customs clearance, and door-to-door logistics in 18 countries.",
+        "cta": "Discover our operations"
+      },
+      "1": {
+        "tag": "Engineering & Infrastructure",
+        "title": "We supply materials for",
+        "highlight": "2,400 km of highways",
+        "titleEnd": "and heavy infrastructure projects",
+        "desc": "Production and distribution of asphalt materials, heavy machinery leasing, and engineering applied to major highway and industrial projects.",
+        "cta": "See our projects"
+      },
+      "2": {
+        "tag": "Agribusiness",
+        "title": "We process",
+        "highlight": "860,000 tons",
+        "titleEnd": "of fertilizers and animal protein",
+        "desc": "From fertilizer production to poultry processing plant operations, we integrate the entire Brazilian agribusiness chain to serve the world's largest markets.",
+        "cta": "Discover BREXD Agribusiness"
+      },
+      "3": {
+        "tag": "Technology & Mobility",
+        "title": "Over",
+        "highlight": "35,000 electric scooters",
+        "titleEnd": "distributed across Latin America",
+        "desc": "Manufacturing, importing, and distributing electric kick scooters and scooters for the Latin American market, with technical assistance and original parts.",
+        "cta": "Explore our solutions"
+      }
+    }
+  },
+  "stats": {
+    "years": "Years of Experience",
+    "offices": "Global Offices",
+    "projects": "Projects Delivered",
+    "countries": "Countries Served",
+    "team": "Team Members",
+    "revenue": "Annual Revenue",
+    "items": {
+      "0": { "label": "years in the market" },
+      "1": { "label": "projects delivered" },
+      "2": { "label": "countries served" },
+      "3": { "label": "team members" }
+    }
+  },
+  "aboutIntro": {
+    "tag": "Who We Are",
+    "title": "A Brazilian company with",
+    "titleHighlight": "global reach",
+    "desc": "BREXD was born from the vision of integrating Brazil's productive potential with the world's largest markets. With offices in Sao Paulo, Miami, and Shanghai, we serve as a strategic bridge between three continents.",
+    "features": {
+      "0": "Integrated solutions across 5 business segments",
+      "1": "Rigorous compliance across all operations",
+      "2": "Partners in 18 countries across 3 continents",
+      "3": "ISO 9001, ISO 14001, and GPTW certifications"
+    },
+    "cta": "Learn about our story",
+    "year": "1997",
+    "yearDesc": "Founded in Sao Paulo with a global vision"
+  },
+  "homeSegments": {
+    "tag": "Our Segments",
+    "title": "Five divisions,",
+    "titleHighlight": "one goal",
+    "titleEnd": "global",
+    "ctaPrefix": "Learn more about",
+    "items": {
+      "0": {
+        "title": "Export",
+        "desc": "Full management of export operations with a focus on containers. We coordinate shipments of Brazilian goods to over 18 countries, with customs clearance, cargo consolidation, and door-to-door tracking.",
+        "stat": "8,200+",
+        "statLabel": "containers/year",
+        "highlights": {
+          "0": "Full customs clearance",
+          "1": "18 destination countries",
+          "2": "Real-time tracking"
+        }
+      },
+      "1": {
+        "title": "Import",
+        "desc": "Strategic import of industrial inputs, machinery, and consumer goods via containers from major hubs in China, Europe, and North America, with customs nationalization and delivery to the final destination.",
+        "stat": "4,100+",
+        "statLabel": "containers/year",
+        "highlights": {
+          "0": "International sourcing",
+          "1": "Full customs nationalization",
+          "2": "Door-to-door delivery"
+        }
+      },
+      "2": {
+        "title": "Engineering",
+        "desc": "Production and supply of asphalt materials for highway projects, plus leasing and operation of heavy machinery — excavators, motor graders, road rollers — for major infrastructure projects.",
+        "stat": "2,400 km",
+        "statLabel": "of highways served",
+        "highlights": {
+          "0": "Asphalt materials",
+          "1": "Heavy machinery",
+          "2": "Highway projects"
+        }
+      },
+      "3": {
+        "title": "Agribusiness",
+        "desc": "Integrated operations across the agribusiness chain: production and distribution of fertilizers for large-scale farming and operation of poultry processing plants with slaughter and processing capacity for export.",
+        "stat": "860k ton",
+        "statLabel": "fertilizers + protein",
+        "highlights": {
+          "0": "NPK fertilizers",
+          "1": "Poultry processing plant",
+          "2": "Protein export"
+        }
+      },
+      "4": {
+        "title": "Technology",
+        "desc": "Manufacturing, importing, and distributing electric kick scooters and scooters for the Latin American market. Proprietary technical assistance network and original parts supply throughout Brazil.",
+        "stat": "35k+",
+        "statLabel": "units distributed",
+        "highlights": {
+          "0": "Electric kick scooters",
+          "1": "Urban scooters",
+          "2": "Technical assistance"
+        }
+      }
+    }
+  },
+  "homeProjects": {
+    "tag": "Cases & Deliveries",
+    "title": "Projects that",
+    "titleHighlight": "deliver results",
+    "viewAllCta": "View all projects",
+    "items": {
+      "0": {
+        "segment": "Export & Import",
+        "title": "LATAM Container Operation — Santos-Shanghai-Miami Route",
+        "desc": "Structuring a triangular logistics corridor for the movement of 4,800 containers per semester between Brazil, China, and the United States, with consolidation and deconsolidation at proprietary terminals.",
+        "stats": {
+          "0": { "label": "Volume", "value": "9,600 TEUs" },
+          "1": { "label": "Route", "value": "3 continents" },
+          "2": { "label": "Value", "value": "US$ 310M" }
+        }
+      },
+      "1": {
+        "segment": "Engineering",
+        "title": "BR-163 Paving — Mato Grosso Section",
+        "desc": "Supply of 48,000 tons of asphalt mix and operation of a heavy machinery fleet for paving 180 km of the BR-163 highway, including earthwork, drainage, and signage.",
+        "stats": {
+          "0": { "label": "Length", "value": "180 km" },
+          "1": { "label": "Machines", "value": "62 units" },
+          "2": { "label": "Value", "value": "R$ 420M" }
+        }
+      },
+      "2": {
+        "segment": "Agribusiness",
+        "title": "Fertilizer Plant — Araguaia Complex",
+        "desc": "Deployment of an NPK fertilizer mixing and granulation unit with a capacity of 360,000 tons/year, integrated with a railway terminal for nationwide distribution.",
+        "stats": {
+          "0": { "label": "Capacity", "value": "360k ton/year" },
+          "1": { "label": "Area", "value": "85,000 m2" },
+          "2": { "label": "Value", "value": "R$ 280M" }
+        }
+      },
+      "3": {
+        "segment": "Agribusiness",
+        "title": "Poultry Processing Plant — Cascavel Unit",
+        "desc": "Construction and operation of a processing plant with a slaughter capacity of 320,000 birds/day, SIF certification, and export authorization for Arab and Asian markets.",
+        "stats": {
+          "0": { "label": "Capacity", "value": "320k birds/day" },
+          "1": { "label": "Markets", "value": "14 countries" },
+          "2": { "label": "Value", "value": "R$ 190M" }
+        }
+      },
+      "4": {
+        "segment": "Technology",
+        "title": "Electric Scooter Distribution — MoveGreen Project",
+        "desc": "Import, assembly, and distribution of 35,000 electric kick scooters and scooters for micromobility operators in 12 Brazilian state capitals, with a proprietary technical assistance network.",
+        "stats": {
+          "0": { "label": "Units", "value": "35,000+" },
+          "1": { "label": "Cities", "value": "12 capitals" },
+          "2": { "label": "Value", "value": "R$ 145M" }
+        }
+      }
+    }
+  },
+  "presence": {
+    "tag": "Where We Are",
+    "title": "Strategic presence across three continents",
+    "since": "Since",
+    "collaborators": "team members",
+    "offices": {
+      "0": {
+        "city": "Sao Paulo",
+        "country": "Brazil",
+        "role": "Global Headquarters",
+        "year": "1997",
+        "team": "180+",
+        "desc": "Administrative center, engineering, agribusiness, and technology hub."
+      },
+      "1": {
+        "city": "Miami",
+        "country": "United States",
+        "role": "Americas Hub",
+        "year": "2007",
+        "team": "85+",
+        "desc": "International trade and compliance hub for the Americas."
+      },
+      "2": {
+        "city": "Shanghai",
+        "country": "China",
+        "role": "Asia Operations",
+        "year": "2013",
+        "team": "85+",
+        "desc": "Sourcing center, logistics, and gateway to Asia."
+      }
+    }
+  },
+  "homePartners": {
+    "tag": "Partners & Clients",
+    "title": "Companies that",
+    "titleHighlight": "trust",
+    "titleEnd": "BREXD",
+    "subtitle": "Multinational corporations and market leaders who choose BREXD as their strategic partner."
+  },
+  "homeCta": {
+    "tag": "Next Step",
+    "title": "Let's build the future",
+    "titleHighlight": "together?",
+    "desc": "Discover how BREXD can drive your business across continents. Our team is ready to assist you.",
+    "cta": "Send Message",
+    "email": "contato@brexd.com",
+    "phone": "+55 (11) 3045-8800"
+  },
+  "homeBlog": {
+    "tag": "Insights & Analysis",
+    "title": "Content that",
+    "titleHighlight": "delivers value",
+    "subtitle": "Expert analysis and industry perspectives from our global team.",
+    "viewAllCta": "View all articles",
+    "tabs": {
+      "trade": "Trade & Containers",
+      "engineering": "Engineering & Asphalt",
+      "agribusiness": "Agro & Fertilizers",
+      "technology": "Electric Mobility"
+    },
+    "posts": {
+      "trade": {
+        "0": {
+          "title": "Container logistics: how to optimize transit time between Santos and Shanghai",
+          "excerpt": "Strategies for reducing transit time and operational costs on transpacific routes.",
+          "date": "22 Feb 2026",
+          "read": "8 min"
+        },
+        "1": {
+          "title": "Demurrage and detention: how to avoid extra costs in container operations",
+          "excerpt": "A practical guide to efficient deadline management and port surcharge reduction.",
+          "date": "18 Feb 2026",
+          "read": "6 min"
+        },
+        "2": {
+          "title": "Cabotage in Brazil: a competitive alternative to road container transport",
+          "excerpt": "Comparative analysis of costs and timelines between cabotage and road freight for long distances.",
+          "date": "12 Feb 2026",
+          "read": "5 min"
+        },
+        "3": {
+          "title": "New trade routes: the impact of the Suez Canal on Brazil-Asia operations",
+          "excerpt": "How geopolitical changes are reshaping global maritime corridors.",
+          "date": "05 Feb 2026",
+          "read": "7 min"
+        }
+      },
+      "engineering": {
+        "0": {
+          "title": "Polymer-modified asphalt: technical advantages for high-traffic highways",
+          "excerpt": "How SBS and EVA are improving pavement durability in tropical climates.",
+          "date": "20 Feb 2026",
+          "read": "7 min"
+        },
+        "1": {
+          "title": "Heavy machinery: leasing trends for major highway projects",
+          "excerpt": "The leasing market for excavators, motor graders, and road rollers in Brazil.",
+          "date": "15 Feb 2026",
+          "read": "9 min"
+        },
+        "2": {
+          "title": "Pavement recycling: cost savings and sustainability in highway maintenance",
+          "excerpt": "Milling techniques and asphalt material reuse in road restoration projects.",
+          "date": "08 Feb 2026",
+          "read": "6 min"
+        },
+        "3": {
+          "title": "Quality control in asphalt plants: critical production parameters",
+          "excerpt": "The tests and specifications that ensure end-product compliance.",
+          "date": "01 Feb 2026",
+          "read": "5 min"
+        }
+      },
+      "agribusiness": {
+        "0": {
+          "title": "NPK fertilizers: pricing and supply trends for the 2026/27 harvest",
+          "excerpt": "Analysis of the global fertilizer market and impacts on Brazilian producers.",
+          "date": "21 Feb 2026",
+          "read": "8 min"
+        },
+        "1": {
+          "title": "Poultry processing plants: how automation is boosting productivity",
+          "excerpt": "Slaughter and processing technologies that increase efficiency and reduce costs.",
+          "date": "14 Feb 2026",
+          "read": "6 min"
+        },
+        "2": {
+          "title": "Chicken exports: Arab and Asian markets expand demand for halal protein",
+          "excerpt": "The certifications and standards required by the largest poultry importers.",
+          "date": "07 Feb 2026",
+          "read": "7 min"
+        },
+        "3": {
+          "title": "Fertilizer logistics: from port to field in record time",
+          "excerpt": "Storage and transportation solutions that ensure inputs arrive just in time for planting.",
+          "date": "02 Feb 2026",
+          "read": "9 min"
+        }
+      },
+      "technology": {
+        "0": {
+          "title": "Electric kick scooters in Brazil: regulation and market opportunities",
+          "excerpt": "The regulatory landscape and the growth potential of urban micromobility.",
+          "date": "19 Feb 2026",
+          "read": "7 min"
+        },
+        "1": {
+          "title": "Electric scooters: why last-mile delivery is the biggest urban mobility business",
+          "excerpt": "Market data and success stories in lightweight electric vehicle distribution.",
+          "date": "13 Feb 2026",
+          "read": "8 min"
+        },
+        "2": {
+          "title": "Lithium batteries: supply chain and challenges for the Brazilian market",
+          "excerpt": "From cell imports to local assembly — the bottlenecks and opportunities in the sector.",
+          "date": "06 Feb 2026",
+          "read": "6 min"
+        },
+        "3": {
+          "title": "Technical assistance as a differentiator: a service network for micromobility",
+          "excerpt": "How BREXD built a maintenance network covering 12 Brazilian state capitals.",
+          "date": "01 Feb 2026",
+          "read": "5 min"
+        }
+      }
+    }
+  },
+  "home": {
+    "segments_title": "Our Segments",
+    "segments_subtitle": "Five integrated divisions driving global growth across different industries and continents.",
+    "presence_title": "Global Presence",
+    "presence_subtitle": "Strategically positioned across three continents to serve our clients worldwide.",
+    "partners_title": "Trusted by Industry Leaders",
+    "partners_subtitle": "We partner with the world's most recognized companies across all our segments.",
+    "testimonials_title": "What Our Partners Say",
+    "cta_title": "Ready to Grow Globally?",
+    "cta_subtitle": "Partner with BREXD and unlock new opportunities across continents.",
+    "cta_button": "Start a Conversation",
+    "blog_title": "Latest Insights",
+    "blog_subtitle": "Expert analysis and industry perspectives from our global team.",
+    "blog_viewAll": "View All Articles"
+  },
+  "about": {
+    "hero_title": "Our Story",
+    "hero_subtitle": "28 years connecting markets, building infrastructure, and driving innovation across continents.",
+    "hero_badge": "Since 1997",
+    "hero_stat_years": "Years of Experience",
+    "hero_stat_continents": "Continents",
+    "hero_stat_team": "Team Members",
+    "hero_stat_revenue": "Annual Revenue",
+    "history_title": "Our Journey",
+    "timeline": {
+      "1997": "Founded in Sao Paulo, Brazil, as a small trading company focused on connecting Brazilian exporters with international markets.",
+      "1997_detail": "Ricardo Brenner launched BREXD with the vision of connecting Brazilian producers to global demand, starting with agricultural commodities.",
+      "2001": "Completed the first import operation from China, establishing a strategic Asia-Brazil trade corridor.",
+      "2001_detail": "Recognized the immense potential of Chinese manufacturing and began importing industrial equipment and electronics for Brazilian distributors.",
+      "2004": "Engineering and Construction Division launched, expanding into infrastructure projects in Brazil.",
+      "2004_detail": "Leveraged our trade expertise to supply materials and manage the construction of port terminals and logistics facilities.",
+      "2007": "Opened a Miami office to serve as an Americas hub, strengthening compliance and international trade capabilities.",
+      "2007_detail": "The Miami office provided strategic access to North American markets, banking infrastructure, and regulatory compliance.",
+      "2010": "Expanded into agribusiness with direct commodity trading operations, connecting farms to global markets.",
+      "2010_detail": "Partnered with major agricultural cooperatives in Brazil, facilitating exports of soybeans, coffee, and sugar to Asia and Europe.",
+      "2013": "Established a Shanghai office, creating a direct presence in the world's largest manufacturing ecosystem.",
+      "2013_detail": "The Shanghai office enabled direct sourcing, quality control, and logistics management for our growing import operations.",
+      "2016": "Technology Division launched, bringing digital transformation solutions to traditional industries.",
+      "2016_detail": "Began developing proprietary platforms for supply chain tracking, agricultural monitoring, and engineering project management.",
+      "2018": "Achieved the first fully integrated operation combining trade, engineering, and technology in a single project.",
+      "2018_detail": "Delivered a $200M port terminal project that included imported Chinese equipment, Brazilian construction, and custom monitoring technology.",
+      "2020": "Reached $1B in annual operations, consolidating our position as a major multinational platform.",
+      "2020_detail": "Despite global challenges, our integrated model proved resilient, with diversified operations across multiple segments and geographies.",
+      "2022": "Obtained ISO 9001 and ISO 14001 certifications, formalizing our commitment to quality and environmental standards.",
+      "2022_detail": "The certifications covered all three offices and five business segments, ensuring consistent quality and sustainability practices globally.",
+      "2024": "Launched a proprietary digital tracking platform for real-time supply chain visibility across all operations.",
+      "2024_detail": "The platform integrates IoT sensors, satellite imagery, and AI analytics to provide end-to-end visibility from origin to destination.",
+      "2025": "Reached $3.2B in revenue with a team of 350+ professionals across three continents.",
+      "2025_detail": "Positioned for the next chapter of growth with expanded technology capabilities, new market entries, and a strengthened leadership team."
+    },
+    "mission_title": "Mission",
+    "mission_text": "Connect markets, build infrastructure, and drive innovation across continents to generate sustainable growth for our partners and communities.",
+    "vision_title": "Vision",
+    "vision_text": "To be the most trusted multinational platform connecting Latin America, North America, and Asia through integrated solutions in trade, engineering, agribusiness, and technology.",
+    "values_title": "Our Values",
+    "values": {
+      "integrity": { "title": "Integrity", "text": "Transparent operations across all markets" },
+      "excellence": { "title": "Excellence", "text": "Uncompromising quality in every project" },
+      "innovation": { "title": "Innovation", "text": "Technology solutions for traditional industries" },
+      "sustainability": { "title": "Sustainability", "text": "Responsible growth that benefits communities" },
+      "global": { "title": "Global Mindset", "text": "Cultural intelligence in every interaction" }
+    },
+    "team_title": "Leadership Team",
+    "team_subtitle": "A diverse team of industry veterans driving BREXD's global operations.",
+    "team": {
+      "ricardo": {
+        "name": "Ricardo Brenner",
+        "title": "CEO & Founder",
+        "bio": "28 years leading BREXD from a small Sao Paulo trading firm to a $3.2B multinational. Ricardo's vision of integrated intercontinental solutions has transformed how companies operate across borders."
+      },
+      "catherine": {
+        "name": "Catherine Mitchell",
+        "title": "Chief Operating Officer",
+        "bio": "Former McKinsey partner with 18 years in global operations. Catherine oversees day-to-day operations across all five segments and three offices, driving operational excellence."
+      },
+      "wei": {
+        "name": "Wei Zhang",
+        "title": "VP Asia Operations",
+        "bio": "15 years of experience in China-Latin America trade. Wei leads our Shanghai office and manages relationships with over 200 manufacturing partners across Asia."
+      },
+      "ana": {
+        "name": "Ana Paula Ferreira",
+        "title": "Chief Financial Officer",
+        "bio": "Former Goldman Sachs VP with deep expertise in international finance, trade credit, and foreign exchange risk management in emerging markets."
+      },
+      "marcus": {
+        "name": "Marcus Thompson",
+        "title": "VP Engineering & Construction",
+        "bio": "Licensed engineer with 20 years in infrastructure. Marcus has overseen $2B+ in construction projects including port terminals, processing plants, and logistics facilities."
+      },
+      "juliana": {
+        "name": "Juliana Santos",
+        "title": "VP Technology & Innovation",
+        "bio": "MIT-trained engineer who built BREXD's technology division from scratch. Juliana leads the development of our proprietary digital platforms and AI-powered solutions."
+      },
+      "diego": {
+        "name": "Diego Ramirez",
+        "title": "VP Commercial",
+        "bio": "Fluent in five languages with deep relationships in 18 countries. Diego leads our global sales team and manages strategic partnerships worldwide."
+      },
+      "luciana": {
+        "name": "Dr. Luciana Motta",
+        "title": "Chief Compliance & Legal Officer",
+        "bio": "International trade law specialist with a PhD from USP. Luciana ensures BREXD operates at the highest standards of regulatory compliance across all jurisdictions."
+      }
+    },
+    "offices_title": "Our Offices",
+    "offices_subtitle": "Strategically positioned across three continents to serve our clients worldwide.",
+    "offices_since": "Since",
+    "offices": {
+      "sp": {
+        "city": "Sao Paulo",
+        "country": "Brazil",
+        "role": "Global Headquarters",
+        "description": "Main administrative center housing engineering, agribusiness operations, technology development, and executive leadership."
+      },
+      "miami": {
+        "city": "Miami",
+        "country": "United States",
+        "role": "Americas Operations Hub",
+        "description": "International trade hub, compliance center, and gateway to North American and Latin American markets."
+      },
+      "shanghai": {
+        "city": "Shanghai",
+        "country": "China",
+        "role": "Asia Operations Center",
+        "description": "Asia sourcing center, quality control operations, logistics management, and gateway to Chinese and Asian markets."
+      }
+    },
+    "certifications_title": "Certifications & Awards",
+    "certifications_subtitle": "Globally recognized for our commitment to quality, safety, sustainability, and workplace excellence.",
+    "certifications": {
+      "iso9001": { "name": "ISO 9001", "label": "Quality Management" },
+      "iso14001": { "name": "ISO 14001", "label": "Environmental Management" },
+      "iso45001": { "name": "ISO 45001", "label": "Health & Safety" },
+      "iso27001": { "name": "ISO 27001", "label": "Information Security" },
+      "leed": { "name": "LEED", "label": "Sustainable Building" },
+      "gptw": { "name": "GPTW", "label": "Great Place to Work" }
+    }
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to explore how BREXD can help your business grow globally? We'd love to hear from you.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "company": "Company",
+      "segment": "Segment of Interest",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent successfully! We will get back to you within 24 hours.",
+      "selectSegment": "Select a segment"
+    },
+    "offices_title": "Our Offices"
+  },
+  "blog": {
+    "title": "Insights & Analysis",
+    "subtitle": "Expert perspectives on global trade, engineering, agribusiness, and technology from our team of industry leaders.",
+    "readMore": "Read Article",
+    "minRead": "min read",
+    "categories": {
+      "all": "All",
+      "global-trade": "Global Trade",
+      "engineering": "Engineering",
+      "agribusiness": "Agribusiness",
+      "tech": "Technology & Innovation",
+      "company": "Company News"
+    },
+    "related": "Related Articles",
+    "share": "Share this article"
+  },
+  "projects": {
+    "title": "Our Projects",
+    "subtitle": "Over 500 projects delivered across five segments and three continents.",
+    "filterAll": "All Segments",
+    "viewProject": "View Project",
+    "details": {
+      "client": "Client",
+      "value": "Project Value",
+      "duration": "Duration",
+      "location": "Location",
+      "year": "Year"
+    }
+  },
+  "partners": {
+    "title": "Our Partners & Clients",
+    "subtitle": "Building lasting relationships with industry leaders around the world.",
+    "categories": {
+      "all": "All",
+      "clients": "Clients",
+      "partners": "Strategic Partners",
+      "suppliers": "Suppliers"
+    }
+  },
+  "footer": {
+    "company": "Company",
+    "resources": "Resources",
+    "contact": "Contact",
+    "tagline": "Connecting markets, building futures.",
+    "newsletter_title": "Stay Updated",
+    "newsletter_subtitle": "Receive insights on global trade, engineering, and agribusiness.",
+    "newsletter_placeholder": "Enter your corporate email",
+    "newsletter_button": "Subscribe",
+    "copyright": "© 2026 BREXD. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "about": "About",
+    "projects": "Projects",
+    "partners": "Partners",
+    "insights": "Insights",
+    "segmentsTitle": "Segments",
+    "export": "Export",
+    "import": "Import",
+    "engineering": "Engineering",
+    "agribusiness": "Agribusiness",
+    "technology": "Technology",
+    "hq": "Sao Paulo, Brazil (HQ)",
+    "miami": "Miami, USA",
+    "shanghai": "Shanghai, China"
+  },
+  "loading": {
+    "text": "Loading..."
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "viewAll": "View All",
+    "backToHome": "Back to Home",
+    "notFound": "Page Not Found",
+    "notFoundText": "The page you are looking for does not exist or has been moved."
+  }
+}

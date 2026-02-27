@@ -12,7 +12,12 @@
     "blog": "Insights",
     "contact": "Contato",
     "language": "Idioma",
-    "getInTouch": "Fale Conosco"
+    "getInTouch": "Fale Conosco",
+    "export": "Exportacao",
+    "import": "Importacao",
+    "engineering": "Engenharia",
+    "agribusiness": "Agronegocio",
+    "technology": "Tecnologia"
   },
   "segments": {
     "export": "Exportacao",
@@ -34,15 +39,41 @@
     "contact": "Fale Conosco"
   },
   "hero": {
-    "headlines": {
-      "line1": "Conectando Mercados",
-      "line2": "Entre Continentes",
-      "rotating": ["Comercio Global", "Engenharia", "Agronegocio", "Tecnologia", "Inovacao"]
-    },
-    "subtitle": "Unindo Brasil, Estados Unidos e China atraves de solucoes integradas em comercio, engenharia, agronegocio e tecnologia.",
-    "cta_primary": "Conheca Nossos Segmentos",
-    "cta_secondary": "Fale Conosco",
-    "scroll": "Role para explorar"
+    "contactCta": "Fale Conosco",
+    "slides": {
+      "0": {
+        "tag": "Exportacao & Importacao",
+        "title": "Movimentamos mais de",
+        "highlight": "12 mil containers",
+        "titleEnd": "por ano entre 3 continentes",
+        "desc": "Operacoes integradas de exportacao e importacao com gestao completa de containers, despacho aduaneiro e logistica porta a porta em 18 paises.",
+        "cta": "Conheca nossas operacoes"
+      },
+      "1": {
+        "tag": "Engenharia & Infraestrutura",
+        "title": "Fornecemos insumos para",
+        "highlight": "2.400 km de rodovias",
+        "titleEnd": "e obras de infraestrutura pesada",
+        "desc": "Producao e distribuicao de insumos asfalticos, locacao de maquinas pesadas e engenharia aplicada a grandes obras rodoviarias e industriais.",
+        "cta": "Veja nossos projetos"
+      },
+      "2": {
+        "tag": "Agronegocio",
+        "title": "Processamos",
+        "highlight": "860 mil toneladas",
+        "titleEnd": "de fertilizantes e proteina animal",
+        "desc": "Da producao de fertilizantes a operacao de frigorificos de aves, integramos toda a cadeia do agronegocio brasileiro com destino aos maiores mercados do mundo.",
+        "cta": "Conheca o agro BREXD"
+      },
+      "3": {
+        "tag": "Tecnologia & Mobilidade",
+        "title": "Mais de",
+        "highlight": "35 mil scooters",
+        "titleEnd": "eletricos distribuidos na America Latina",
+        "desc": "Fabricacao, importacao e distribuicao de patinetes eletricos e scooters para o mercado latino-americano, com assistencia tecnica e pecas originais.",
+        "cta": "Explore nossas solucoes"
+      }
+    }
   },
   "stats": {
     "years": "Anos de Experiencia",
@@ -50,7 +81,317 @@
     "projects": "Projetos Entregues",
     "countries": "Paises Atendidos",
     "team": "Colaboradores",
-    "revenue": "Receita Anual"
+    "revenue": "Receita Anual",
+    "items": {
+      "0": { "label": "anos de mercado" },
+      "1": { "label": "projetos entregues" },
+      "2": { "label": "paises atendidos" },
+      "3": { "label": "colaboradores" }
+    }
+  },
+  "aboutIntro": {
+    "tag": "Quem Somos",
+    "title": "Uma empresa brasileira com",
+    "titleHighlight": "alcance global",
+    "desc": "A BREXD nasceu da visao de integrar o potencial produtivo brasileiro aos maiores mercados do mundo. Com escritorios em Sao Paulo, Miami e Shanghai, atuamos como ponte estrategica entre tres continentes.",
+    "features": {
+      "0": "Solucoes integradas em 5 segmentos de atuacao",
+      "1": "Compliance rigoroso em todas as operacoes",
+      "2": "Parceiros em 18 paises nos 3 continentes",
+      "3": "Certificacoes ISO 9001, ISO 14001 e GPTW"
+    },
+    "cta": "Conheca nossa historia",
+    "year": "1997",
+    "yearDesc": "Fundada em Sao Paulo com visao global"
+  },
+  "homeSegments": {
+    "tag": "Nossos Segmentos",
+    "title": "Cinco divisoes,",
+    "titleHighlight": "um objetivo",
+    "titleEnd": "global",
+    "ctaPrefix": "Saiba mais sobre",
+    "items": {
+      "0": {
+        "title": "Exportacao",
+        "desc": "Gestao completa de operacoes de exportacao com foco em containers. Coordenamos embarques de mercadorias brasileiras para mais de 18 paises, com despacho aduaneiro, consolidacao de cargas e rastreamento porta a porta.",
+        "stat": "8.200+",
+        "statLabel": "containers/ano",
+        "highlights": {
+          "0": "Despacho aduaneiro completo",
+          "1": "18 paises de destino",
+          "2": "Rastreamento em tempo real"
+        }
+      },
+      "1": {
+        "title": "Importacao",
+        "desc": "Importacao estrategica de insumos industriais, maquinario e bens de consumo via containers dos principais hubs da China, Europa e America do Norte, com nacionalizacao e entrega no destino final.",
+        "stat": "4.100+",
+        "statLabel": "containers/ano",
+        "highlights": {
+          "0": "Sourcing internacional",
+          "1": "Nacionalizacao completa",
+          "2": "Entrega porta a porta"
+        }
+      },
+      "2": {
+        "title": "Engenharia",
+        "desc": "Producao e fornecimento de insumos asfalticos para obras rodoviarias, alem de locacao e operacao de maquinas pesadas — escavadeiras, motoniveladoras, rolos compactadores — para grandes projetos de infraestrutura.",
+        "stat": "2.400 km",
+        "statLabel": "de rodovias atendidas",
+        "highlights": {
+          "0": "Insumos asfalticos",
+          "1": "Maquinas pesadas",
+          "2": "Obras rodoviarias"
+        }
+      },
+      "3": {
+        "title": "Agronegocio",
+        "desc": "Atuacao integrada na cadeia do agro: producao e distribuicao de fertilizantes para grandes lavouras e operacao de frigorificos de aves com capacidade de abate e processamento para exportacao.",
+        "stat": "860k ton",
+        "statLabel": "fertilizantes + proteina",
+        "highlights": {
+          "0": "Fertilizantes NPK",
+          "1": "Frigorifico de aves",
+          "2": "Exportacao de proteina"
+        }
+      },
+      "4": {
+        "title": "Tecnologia",
+        "desc": "Fabricacao, importacao e distribuicao de patinetes eletricos e scooters para o mercado latino-americano. Rede propria de assistencia tecnica e fornecimento de pecas originais em todo o Brasil.",
+        "stat": "35k+",
+        "statLabel": "unidades distribuidas",
+        "highlights": {
+          "0": "Patinetes eletricos",
+          "1": "Scooters urbanos",
+          "2": "Assistencia tecnica"
+        }
+      }
+    }
+  },
+  "homeProjects": {
+    "tag": "Cases & Entregas",
+    "title": "Projetos que",
+    "titleHighlight": "geram resultados",
+    "viewAllCta": "Ver todos os projetos",
+    "items": {
+      "0": {
+        "segment": "Exportacao & Importacao",
+        "title": "Operacao Container LATAM — Rota Santos-Shanghai-Miami",
+        "desc": "Estruturacao de corredor logistico triangular para movimentacao de 4.800 containers por semestre entre Brasil, China e Estados Unidos, com consolidacao e desconsolidacao em terminais proprios.",
+        "stats": {
+          "0": { "label": "Volume", "value": "9.600 TEUs" },
+          "1": { "label": "Rota", "value": "3 continentes" },
+          "2": { "label": "Valor", "value": "US$ 310M" }
+        }
+      },
+      "1": {
+        "segment": "Engenharia",
+        "title": "Pavimentacao BR-163 — Trecho Mato Grosso",
+        "desc": "Fornecimento de 48 mil toneladas de massa asfaltica e operacao de frota de maquinas pesadas para pavimentacao de 180 km da BR-163, incluindo terraplanagem, drenagem e sinalizacao.",
+        "stats": {
+          "0": { "label": "Extensao", "value": "180 km" },
+          "1": { "label": "Maquinas", "value": "62 unidades" },
+          "2": { "label": "Valor", "value": "R$ 420M" }
+        }
+      },
+      "2": {
+        "segment": "Agronegocio",
+        "title": "Planta de Fertilizantes — Complexo Araguaia",
+        "desc": "Implantacao de unidade de mistura e granulacao de fertilizantes NPK com capacidade de 360 mil toneladas/ano, integrada a terminal ferroviario para distribuicao nacional.",
+        "stats": {
+          "0": { "label": "Capacidade", "value": "360k ton/ano" },
+          "1": { "label": "Area", "value": "85.000 m2" },
+          "2": { "label": "Valor", "value": "R$ 280M" }
+        }
+      },
+      "3": {
+        "segment": "Agronegocio",
+        "title": "Frigorifico de Aves — Unidade Cascavel",
+        "desc": "Construcao e operacao de frigorifico com capacidade de abate de 320 mil aves/dia, certificacao SIF e habilitacao para exportacao para mercados arabes e asiaticos.",
+        "stats": {
+          "0": { "label": "Capacidade", "value": "320k aves/dia" },
+          "1": { "label": "Mercados", "value": "14 paises" },
+          "2": { "label": "Valor", "value": "R$ 190M" }
+        }
+      },
+      "4": {
+        "segment": "Tecnologia",
+        "title": "Distribuicao de Scooters Eletricos — Projeto MoveGreen",
+        "desc": "Importacao, montagem e distribuicao de 35 mil patinetes e scooters eletricos para operadores de micromobilidade em 12 capitais brasileiras, com rede de assistencia tecnica propria.",
+        "stats": {
+          "0": { "label": "Unidades", "value": "35.000+" },
+          "1": { "label": "Cidades", "value": "12 capitais" },
+          "2": { "label": "Valor", "value": "R$ 145M" }
+        }
+      }
+    }
+  },
+  "presence": {
+    "tag": "Onde Estamos",
+    "title": "Presenca estrategica em tres continentes",
+    "since": "Desde",
+    "collaborators": "colaboradores",
+    "offices": {
+      "0": {
+        "city": "Sao Paulo",
+        "country": "Brasil",
+        "role": "Sede Global",
+        "year": "1997",
+        "team": "180+",
+        "desc": "Centro administrativo, engenharia, agronegocio e hub de tecnologia."
+      },
+      "1": {
+        "city": "Miami",
+        "country": "Estados Unidos",
+        "role": "Hub Americas",
+        "year": "2007",
+        "team": "85+",
+        "desc": "Hub de comercio internacional e compliance para as Americas."
+      },
+      "2": {
+        "city": "Shanghai",
+        "country": "China",
+        "role": "Operacoes Asia",
+        "year": "2013",
+        "team": "85+",
+        "desc": "Centro de sourcing, logistica e porta de entrada para a Asia."
+      }
+    }
+  },
+  "homePartners": {
+    "tag": "Parceiros & Clientes",
+    "title": "Empresas que",
+    "titleHighlight": "confiam",
+    "titleEnd": "na BREXD",
+    "subtitle": "Multinacionais e lideres de mercado que escolhem a BREXD como parceira estrategica."
+  },
+  "homeCta": {
+    "tag": "Proximo Passo",
+    "title": "Vamos construir o futuro",
+    "titleHighlight": "juntos?",
+    "desc": "Descubra como a BREXD pode impulsionar seus negocios entre continentes. Nossa equipe esta pronta para atender voce.",
+    "cta": "Enviar Mensagem",
+    "email": "contato@brexd.com",
+    "phone": "+55 (11) 3045-8800"
+  },
+  "homeBlog": {
+    "tag": "Insights & Analises",
+    "title": "Conteudo que",
+    "titleHighlight": "gera valor",
+    "subtitle": "Analises especializadas e perspectivas do setor pela nossa equipe global.",
+    "viewAllCta": "Ver todos os artigos",
+    "tabs": {
+      "trade": "Comercio & Containers",
+      "engineering": "Engenharia & Asfalto",
+      "agribusiness": "Agro & Fertilizantes",
+      "technology": "Mobilidade Eletrica"
+    },
+    "posts": {
+      "trade": {
+        "0": {
+          "title": "Logistica de containers: como otimizar o transit time entre Santos e Shanghai",
+          "excerpt": "Estrategias para reduzir o tempo de transito e os custos operacionais em rotas transpacificas.",
+          "date": "22 Fev 2026",
+          "read": "8 min"
+        },
+        "1": {
+          "title": "Demurrage e detention: como evitar custos extras na operacao de containers",
+          "excerpt": "Guia pratico para gestao eficiente de prazos e reducao de sobretaxas portuarias.",
+          "date": "18 Fev 2026",
+          "read": "6 min"
+        },
+        "2": {
+          "title": "Cabotagem no Brasil: alternativa competitiva ao transporte rodoviario de containers",
+          "excerpt": "Analise comparativa de custos e prazos entre cabotagem e frete rodoviario para longas distancias.",
+          "date": "12 Fev 2026",
+          "read": "5 min"
+        },
+        "3": {
+          "title": "Novas rotas comerciais: o impacto do Canal de Suez na operacao Brasil-Asia",
+          "excerpt": "Como as mudancas geopoliticas estao redesenhando corredores maritimos globais.",
+          "date": "05 Fev 2026",
+          "read": "7 min"
+        }
+      },
+      "engineering": {
+        "0": {
+          "title": "Asfalto modificado por polimero: vantagens tecnicas em rodovias de alto trafego",
+          "excerpt": "Como o SBS e o EVA estao melhorando a durabilidade do pavimento em climas tropicais.",
+          "date": "20 Fev 2026",
+          "read": "7 min"
+        },
+        "1": {
+          "title": "Maquinas pesadas: tendencias em locacao para grandes obras rodoviarias",
+          "excerpt": "O mercado de locacao de escavadeiras, motoniveladoras e rolos compactadores no Brasil.",
+          "date": "15 Fev 2026",
+          "read": "9 min"
+        },
+        "2": {
+          "title": "Reciclagem de pavimento: economia e sustentabilidade na manutencao rodoviaria",
+          "excerpt": "Tecnicas de fresagem e reaproveitamento de material asfaltico em obras de restauracao.",
+          "date": "08 Fev 2026",
+          "read": "6 min"
+        },
+        "3": {
+          "title": "Controle de qualidade em usinas de asfalto: parametros criticos de producao",
+          "excerpt": "Os ensaios e especificacoes que garantem a conformidade do produto final.",
+          "date": "01 Fev 2026",
+          "read": "5 min"
+        }
+      },
+      "agribusiness": {
+        "0": {
+          "title": "Fertilizantes NPK: tendencias de preco e abastecimento para a safra 2026/27",
+          "excerpt": "Analise do mercado global de fertilizantes e impactos para o produtor brasileiro.",
+          "date": "21 Fev 2026",
+          "read": "8 min"
+        },
+        "1": {
+          "title": "Frigorificos de aves: como a automacao esta elevando a produtividade",
+          "excerpt": "Tecnologias de abate e processamento que aumentam a eficiencia e reduzem custos.",
+          "date": "14 Fev 2026",
+          "read": "6 min"
+        },
+        "2": {
+          "title": "Exportacao de frango: mercados arabes e asiaticos ampliam demanda por proteina halal",
+          "excerpt": "As certificacoes e padroes exigidos pelos maiores importadores de carne de aves.",
+          "date": "07 Fev 2026",
+          "read": "7 min"
+        },
+        "3": {
+          "title": "Logistica de fertilizantes: do porto ao campo em tempo recorde",
+          "excerpt": "Solucoes de armazenagem e transporte que garantem o insumo na hora certa para o plantio.",
+          "date": "02 Fev 2026",
+          "read": "9 min"
+        }
+      },
+      "technology": {
+        "0": {
+          "title": "Patinetes eletricos no Brasil: regulamentacao e oportunidades de mercado",
+          "excerpt": "O panorama regulatorio e o potencial de crescimento da micromobilidade urbana.",
+          "date": "19 Fev 2026",
+          "read": "7 min"
+        },
+        "1": {
+          "title": "Scooters eletricos: por que a ultima milha e o maior negocio da mobilidade urbana",
+          "excerpt": "Dados de mercado e cases de sucesso na distribuicao de veiculos eletricos leves.",
+          "date": "13 Fev 2026",
+          "read": "8 min"
+        },
+        "2": {
+          "title": "Baterias de litio: cadeia de suprimento e desafios para o mercado brasileiro",
+          "excerpt": "Da importacao de celulas a montagem local — os gargalos e oportunidades do setor.",
+          "date": "06 Fev 2026",
+          "read": "6 min"
+        },
+        "3": {
+          "title": "Assistencia tecnica como diferencial: rede de servicos para micromobilidade",
+          "excerpt": "Como a BREXD estruturou uma rede de manutencao que cobre 12 capitais brasileiras.",
+          "date": "01 Fev 2026",
+          "read": "5 min"
+        }
+      }
+    }
   },
   "home": {
     "segments_title": "Nossos Segmentos",
@@ -252,11 +593,25 @@
     "contact": "Contato",
     "tagline": "Conectando mercados, construindo futuros.",
     "newsletter_title": "Fique Atualizado",
-    "newsletter_placeholder": "Digite seu email",
+    "newsletter_subtitle": "Receba insights sobre comercio global, engenharia e agronegocio.",
+    "newsletter_placeholder": "Digite seu e-mail corporativo",
     "newsletter_button": "Inscrever-se",
     "copyright": "© 2026 BREXD. Todos os direitos reservados.",
     "privacy": "Politica de Privacidade",
-    "terms": "Termos de Uso"
+    "terms": "Termos de Uso",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "partners": "Parceiros",
+    "insights": "Insights",
+    "segmentsTitle": "Segmentos",
+    "export": "Exportacao",
+    "import": "Importacao",
+    "engineering": "Engenharia",
+    "agribusiness": "Agronegocio",
+    "technology": "Tecnologia",
+    "hq": "Sao Paulo, Brasil (Sede)",
+    "miami": "Miami, EUA",
+    "shanghai": "Shanghai, China"
   },
   "loading": {
     "text": "Carregando..."

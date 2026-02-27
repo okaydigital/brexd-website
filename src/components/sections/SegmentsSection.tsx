@@ -5,57 +5,33 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, Plus, Minus } from "lucide-react";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
-const segments = [
+const segmentsMeta = [
   {
-    title: "Exportação",
-    desc: "Gestão completa de operações de exportação com foco em containers. Coordenamos embarques de mercadorias brasileiras para mais de 18 países, com despacho aduaneiro, consolidação de cargas e rastreamento porta a porta.",
     image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=900&q=80",
     href: "/segments/export" as const,
-    stat: "8.200+",
-    statLabel: "containers/ano",
-    highlights: ["Despacho aduaneiro completo", "18 países de destino", "Rastreamento em tempo real"],
     color: "#0D2137",
   },
   {
-    title: "Importação",
-    desc: "Importação estratégica de insumos industriais, maquinário e bens de consumo via containers dos principais hubs da China, Europa e América do Norte, com nacionalização e entrega no destino final.",
     image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=900&q=80",
     href: "/segments/import" as const,
-    stat: "4.100+",
-    statLabel: "containers/ano",
-    highlights: ["Sourcing internacional", "Nacionalização completa", "Entrega porta a porta"],
     color: "#1B7A3D",
   },
   {
-    title: "Engenharia",
-    desc: "Produção e fornecimento de insumos asfálticos para obras rodoviárias, além de locação e operação de máquinas pesadas — escavadeiras, motoniveladoras, rolos compactadores — para grandes projetos de infraestrutura.",
     image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=900&q=80",
     href: "/segments/engineering" as const,
-    stat: "2.400 km",
-    statLabel: "de rodovias atendidas",
-    highlights: ["Insumos asfálticos", "Máquinas pesadas", "Obras rodoviárias"],
     color: "#E8B624",
   },
   {
-    title: "Agronegócio",
-    desc: "Atuação integrada na cadeia do agro: produção e distribuição de fertilizantes para grandes lavouras e operação de frigoríficos de aves com capacidade de abate e processamento para exportação.",
     image: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=900&q=80",
     href: "/segments/agribusiness" as const,
-    stat: "860k ton",
-    statLabel: "fertilizantes + proteína",
-    highlights: ["Fertilizantes NPK", "Frigorífico de aves", "Exportação de proteína"],
     color: "#2E8B57",
   },
   {
-    title: "Tecnologia",
-    desc: "Fabricação, importação e distribuição de patinetes elétricos e scooters para o mercado latino-americano. Rede própria de assistência técnica e fornecimento de peças originais em todo o Brasil.",
     image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=900&q=80",
     href: "/segments/technology" as const,
-    stat: "35k+",
-    statLabel: "unidades distribuídas",
-    highlights: ["Patinetes elétricos", "Scooters urbanos", "Assistência técnica"],
     color: "#1E56A0",
   },
 ];
@@ -63,6 +39,7 @@ const segments = [
 const INTERVAL = 5500;
 
 export default function SegmentsSection() {
+  const t = useTranslations("homeSegments");
   const [active, setActive] = useState(0);
   const [progress, setProgress] = useState(0);
 
@@ -76,7 +53,7 @@ export default function SegmentsSection() {
     const tick = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
-          setActive((a) => (a + 1) % segments.length);
+          setActive((a) => (a + 1) % segmentsMeta.length);
           return 0;
         }
         return prev + (step / INTERVAL) * 100;
@@ -93,12 +70,12 @@ export default function SegmentsSection() {
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="h-px w-10 bg-brand-gold" />
               <span className="text-xs uppercase tracking-[0.2em] text-brand-gold font-semibold">
-                Nossos Segmentos
+                {t("tag")}
               </span>
               <div className="h-px w-10 bg-brand-gold" />
             </div>
             <h2 className="text-3xl md:text-4xl font-black text-white leading-tight">
-              Cinco divisões, <span className="text-brand-gold">um objetivo</span> global
+              {t("title")} <span className="text-brand-gold">{t("titleHighlight")}</span> {t("titleEnd")}
             </h2>
           </div>
         </ScrollReveal>
@@ -106,11 +83,15 @@ export default function SegmentsSection() {
         {/* Vertical accordion */}
         <ScrollReveal>
           <div className="space-y-2">
-            {segments.map((seg, i) => {
+            {segmentsMeta.map((seg, i) => {
               const isActive = i === active;
+              const title = t(`items.${i}.title`);
+              const stat = t(`items.${i}.stat`);
+              const statLabel = t(`items.${i}.statLabel`);
+
               return (
                 <div
-                  key={seg.title}
+                  key={i}
                   className="rounded-xl overflow-hidden transition-shadow"
                 >
                   {/* Header row - YELLOW when active */}
@@ -136,7 +117,7 @@ export default function SegmentsSection() {
                       <span className={`text-sm md:text-base font-bold transition-colors ${
                         isActive ? "text-brand-navy" : "text-white/60"
                       }`}>
-                        {seg.title}
+                        {title}
                       </span>
                     </div>
 
@@ -144,12 +125,12 @@ export default function SegmentsSection() {
                       <span className={`text-lg md:text-xl font-black transition-colors ${
                         isActive ? "text-brand-navy" : "text-white/20"
                       }`}>
-                        {seg.stat}
+                        {stat}
                       </span>
                       <span className={`hidden md:block text-[10px] uppercase tracking-wider transition-colors ${
                         isActive ? "text-brand-navy/60" : "text-white/20"
                       }`}>
-                        {seg.statLabel}
+                        {statLabel}
                       </span>
                     </div>
 
@@ -177,7 +158,7 @@ export default function SegmentsSection() {
                             <div className="md:col-span-3 relative aspect-[16/9] rounded-lg overflow-hidden">
                               <Image
                                 src={seg.image}
-                                alt={seg.title}
+                                alt={title}
                                 fill
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 60vw"
@@ -188,7 +169,7 @@ export default function SegmentsSection() {
                                   className="text-[10px] uppercase tracking-widest font-bold px-3 py-1.5 rounded text-white"
                                   style={{ backgroundColor: seg.color }}
                                 >
-                                  {seg.title}
+                                  {title}
                                 </span>
                               </div>
                             </div>
@@ -197,17 +178,17 @@ export default function SegmentsSection() {
                             <div className="md:col-span-2 flex flex-col justify-between">
                               <div>
                                 <div className="flex items-baseline gap-2 mb-4">
-                                  <span className="text-3xl font-black text-brand-navy">{seg.stat}</span>
-                                  <span className="text-xs text-gray-400 uppercase tracking-wider">{seg.statLabel}</span>
+                                  <span className="text-3xl font-black text-brand-navy">{stat}</span>
+                                  <span className="text-xs text-gray-400 uppercase tracking-wider">{statLabel}</span>
                                 </div>
                                 <p className="text-sm text-gray-600 leading-relaxed mb-5">
-                                  {seg.desc}
+                                  {t(`items.${i}.desc`)}
                                 </p>
                                 <div className="space-y-2 mb-5">
-                                  {seg.highlights.map((h) => (
+                                  {[0, 1, 2].map((h) => (
                                     <div key={h} className="flex items-center gap-2">
                                       <div className="w-1.5 h-1.5 rounded-full bg-brand-gold shrink-0" />
-                                      <span className="text-xs font-semibold text-gray-500">{h}</span>
+                                      <span className="text-xs font-semibold text-gray-500">{t(`items.${i}.highlights.${h}`)}</span>
                                     </div>
                                   ))}
                                 </div>
@@ -216,7 +197,7 @@ export default function SegmentsSection() {
                                 href={seg.href}
                                 className="group inline-flex items-center gap-2 text-sm font-bold text-brand-navy hover:text-brand-green transition-colors"
                               >
-                                Saiba mais sobre {seg.title}
+                                {t("ctaPrefix")} {title}
                                 <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                               </Link>
                             </div>

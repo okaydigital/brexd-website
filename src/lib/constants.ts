@@ -2,7 +2,7 @@ export const SITE_CONFIG = {
   name: "BREXD",
   url: "https://brexd.com",
   defaultLocale: "pt-BR" as const,
-  locales: ["pt-BR"] as const,
+  locales: ["pt-BR", "en", "zh"] as const,
 } as const;
 
 export const SEGMENTS = {

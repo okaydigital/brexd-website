@@ -5,67 +5,28 @@ import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
-const projects = [
+const projectsMeta = [
   {
-    segment: "Exportação & Importação",
-    title: "Operação Container LATAM — Rota Santos-Shanghai-Miami",
-    desc: "Estruturação de corredor logístico triangular para movimentação de 4.800 containers por semestre entre Brasil, China e Estados Unidos, com consolidação e desconsolidação em terminais próprios.",
     image: "https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=900&q=80",
-    stats: [
-      { label: "Volume", value: "9.600 TEUs" },
-      { label: "Rota", value: "3 continentes" },
-      { label: "Valor", value: "US$ 310M" },
-    ],
     color: "#0D2137",
   },
   {
-    segment: "Engenharia",
-    title: "Pavimentação BR-163 — Trecho Mato Grosso",
-    desc: "Fornecimento de 48 mil toneladas de massa asfáltica e operação de frota de máquinas pesadas para pavimentação de 180 km da BR-163, incluindo terraplanagem, drenagem e sinalização.",
     image: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=900&q=80",
-    stats: [
-      { label: "Extensão", value: "180 km" },
-      { label: "Máquinas", value: "62 unidades" },
-      { label: "Valor", value: "R$ 420M" },
-    ],
     color: "#E8B624",
   },
   {
-    segment: "Agronegócio",
-    title: "Planta de Fertilizantes — Complexo Araguaia",
-    desc: "Implantação de unidade de mistura e granulação de fertilizantes NPK com capacidade de 360 mil toneladas/ano, integrada a terminal ferroviário para distribuição nacional.",
     image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=900&q=80",
-    stats: [
-      { label: "Capacidade", value: "360k ton/ano" },
-      { label: "Área", value: "85.000 m²" },
-      { label: "Valor", value: "R$ 280M" },
-    ],
     color: "#2E8B57",
   },
   {
-    segment: "Agronegócio",
-    title: "Frigorífico de Aves — Unidade Cascavel",
-    desc: "Construção e operação de frigorífico com capacidade de abate de 320 mil aves/dia, certificação SIF e habilitação para exportação para mercados árabes e asiáticos.",
     image: "https://images.unsplash.com/photo-1604848698030-c434ba08ece1?w=900&q=80",
-    stats: [
-      { label: "Capacidade", value: "320k aves/dia" },
-      { label: "Mercados", value: "14 países" },
-      { label: "Valor", value: "R$ 190M" },
-    ],
     color: "#2E8B57",
   },
   {
-    segment: "Tecnologia",
-    title: "Distribuição de Scooters Elétricos — Projeto MoveGreen",
-    desc: "Importação, montagem e distribuição de 35 mil patinetes e scooters elétricos para operadores de micromobilidade em 12 capitais brasileiras, com rede de assistência técnica própria.",
     image: "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=900&q=80",
-    stats: [
-      { label: "Unidades", value: "35.000+" },
-      { label: "Cidades", value: "12 capitais" },
-      { label: "Valor", value: "R$ 145M" },
-    ],
     color: "#1E56A0",
   },
 ];
@@ -73,6 +34,7 @@ const projects = [
 const INTERVAL = 6000;
 
 export default function ProjectsShowcase() {
+  const t = useTranslations("homeProjects");
   const [current, setCurrent] = useState(0);
   const [progress, setProgress] = useState(0);
 
@@ -82,12 +44,12 @@ export default function ProjectsShowcase() {
   }, []);
 
   const next = useCallback(() => {
-    setCurrent((c) => (c + 1) % projects.length);
+    setCurrent((c) => (c + 1) % projectsMeta.length);
     setProgress(0);
   }, []);
 
   const prev = useCallback(() => {
-    setCurrent((c) => (c - 1 + projects.length) % projects.length);
+    setCurrent((c) => (c - 1 + projectsMeta.length) % projectsMeta.length);
     setProgress(0);
   }, []);
 
@@ -96,7 +58,7 @@ export default function ProjectsShowcase() {
     const tick = setInterval(() => {
       setProgress((p) => {
         if (p >= 100) {
-          setCurrent((c) => (c + 1) % projects.length);
+          setCurrent((c) => (c + 1) % projectsMeta.length);
           return 0;
         }
         return p + (step / INTERVAL) * 100;
@@ -105,7 +67,7 @@ export default function ProjectsShowcase() {
     return () => clearInterval(tick);
   }, []);
 
-  const proj = projects[current];
+  const proj = projectsMeta[current];
 
   return (
     <section className="py-20 md:py-28 bg-white">
@@ -115,12 +77,12 @@ export default function ProjectsShowcase() {
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="h-px w-10 bg-brand-gold" />
               <span className="text-xs uppercase tracking-[0.2em] text-brand-gold font-semibold">
-                Cases & Entregas
+                {t("tag")}
               </span>
               <div className="h-px w-10 bg-brand-gold" />
             </div>
             <h2 className="text-3xl md:text-4xl font-black text-brand-navy leading-tight">
-              Projetos que <span className="text-brand-gold">geram resultados</span>
+              {t("title")} <span className="text-brand-gold">{t("titleHighlight")}</span>
             </h2>
           </div>
         </ScrollReveal>
@@ -140,7 +102,7 @@ export default function ProjectsShowcase() {
                 >
                   <Image
                     src={proj.image}
-                    alt={proj.title}
+                    alt={t(`items.${current}.title`)}
                     fill
                     className="object-cover"
                     sizes="(max-width: 1024px) 100vw, 50vw"
@@ -153,7 +115,7 @@ export default function ProjectsShowcase() {
                   className="text-[10px] uppercase tracking-widest font-bold px-3 py-1.5 rounded text-white"
                   style={{ backgroundColor: proj.color }}
                 >
-                  {proj.segment}
+                  {t(`items.${current}.segment`)}
                 </span>
               </div>
             </div>
@@ -169,14 +131,14 @@ export default function ProjectsShowcase() {
                   transition={{ duration: 0.4 }}
                 >
                   <h3 className="text-xl md:text-2xl font-black text-brand-navy leading-tight">
-                    {proj.title}
+                    {t(`items.${current}.title`)}
                   </h3>
-                  <p className="mt-3 text-sm text-gray-500 leading-relaxed">{proj.desc}</p>
+                  <p className="mt-3 text-sm text-gray-500 leading-relaxed">{t(`items.${current}.desc`)}</p>
                   <div className="mt-6 grid grid-cols-3 gap-4">
-                    {proj.stats.map((stat) => (
-                      <div key={stat.label} className="border-l-2 border-brand-gold/30 pl-3">
-                        <p className="text-lg font-black text-brand-navy">{stat.value}</p>
-                        <p className="text-[10px] text-gray-400 uppercase tracking-wider">{stat.label}</p>
+                    {[0, 1, 2].map((s) => (
+                      <div key={s} className="border-l-2 border-brand-gold/30 pl-3">
+                        <p className="text-lg font-black text-brand-navy">{t(`items.${current}.stats.${s}.value`)}</p>
+                        <p className="text-[10px] text-gray-400 uppercase tracking-wider">{t(`items.${current}.stats.${s}.label`)}</p>
                       </div>
                     ))}
                   </div>
@@ -184,7 +146,7 @@ export default function ProjectsShowcase() {
                     href="/projects"
                     className="group inline-flex items-center gap-2 mt-6 text-sm font-bold text-brand-green hover:text-brand-green-light transition-colors"
                   >
-                    Ver todos os projetos
+                    {t("viewAllCta")}
                     <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </motion.div>
@@ -196,7 +158,7 @@ export default function ProjectsShowcase() {
                   <ChevronLeft className="w-4 h-4" />
                 </button>
                 <div className="flex gap-1.5 flex-1">
-                  {projects.map((_, i) => (
+                  {projectsMeta.map((_, i) => (
                     <button
                       key={i}
                       onClick={() => goTo(i)}

@@ -4,53 +4,30 @@ import { useEffect, useState, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight } from "lucide-react";
+import { useTranslations } from "next-intl";
 
-const slides = [
+const slidesMeta = [
   {
     video: "https://videos.pexels.com/video-files/1093662/1093662-hd_1920_1080_30fps.mp4",
     poster: "https://images.unsplash.com/photo-1494412574643-ff11b0a5eb19?w=1920&q=80",
-    tag: "Exportação & Importação",
-    title: "Movimentamos mais de",
-    highlight: "12 mil containers",
-    titleEnd: "por ano entre 3 continentes",
-    desc: "Operações integradas de exportação e importação com gestão completa de containers, desembaraço aduaneiro e logística porta a porta em 18 países.",
-    cta: "Conheça nossas operações",
     href: "/segments/export" as const,
     accent: "#1B7A3D",
   },
   {
     video: "https://videos.pexels.com/video-files/4430419/4430419-uhd_2560_1440_24fps.mp4",
     poster: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=80",
-    tag: "Engenharia & Infraestrutura",
-    title: "Fornecemos insumos para",
-    highlight: "2.400 km de rodovias",
-    titleEnd: "e obras de infraestrutura pesada",
-    desc: "Produção e distribuição de insumos asfálticos, locação de máquinas pesadas e engenharia aplicada a grandes obras rodoviárias e industriais.",
-    cta: "Veja nossos projetos",
     href: "/segments/engineering" as const,
     accent: "#E8B624",
   },
   {
     video: "https://videos.pexels.com/video-files/3370949/3370949-hd_1920_1080_25fps.mp4",
     poster: "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1920&q=80",
-    tag: "Agronegócio",
-    title: "Processamos",
-    highlight: "860 mil toneladas",
-    titleEnd: "de fertilizantes e proteína animal",
-    desc: "Da produção de fertilizantes à operação de frigoríficos de aves, integramos toda a cadeia do agronegócio brasileiro com destino aos maiores mercados do mundo.",
-    cta: "Conheça o agro BREXD",
     href: "/segments/agribusiness" as const,
     accent: "#2E8B57",
   },
   {
     video: "https://videos.pexels.com/video-files/856973/856973-hd_1920_1080_25fps.mp4",
     poster: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&q=80",
-    tag: "Tecnologia & Mobilidade",
-    title: "Mais de",
-    highlight: "35 mil scooters",
-    titleEnd: "elétricos distribuídos na América Latina",
-    desc: "Fabricação, importação e distribuição de patinetes elétricos e scooters para o mercado latino-americano, com assistência técnica e peças originais.",
-    cta: "Explore nossas soluções",
     href: "/segments/technology" as const,
     accent: "#1E56A0",
   },
@@ -59,6 +36,7 @@ const slides = [
 const INTERVAL = 8000;
 
 export default function HeroSection() {
+  const t = useTranslations("hero");
   const [current, setCurrent] = useState(0);
   const [progress, setProgress] = useState(0);
   const videoRefs = useRef<(HTMLVideoElement | null)[]>([]);
@@ -85,7 +63,7 @@ export default function HeroSection() {
     const tick = setInterval(() => {
       setProgress((prev) => {
         if (prev >= 100) {
-          setCurrent((c) => (c + 1) % slides.length);
+          setCurrent((c) => (c + 1) % slidesMeta.length);
           return 0;
         }
         return prev + (step / INTERVAL) * 100;
@@ -94,12 +72,12 @@ export default function HeroSection() {
     return () => clearInterval(tick);
   }, []);
 
-  const slide = slides[current];
+  const meta = slidesMeta[current];
 
   return (
     <section className="relative h-screen min-h-[600px] max-h-[1000px] overflow-hidden bg-black">
       {/* Video backgrounds */}
-      {slides.map((s, i) => (
+      {slidesMeta.map((s, i) => (
         <div
           key={i}
           className="absolute inset-0 transition-opacity duration-1000"
@@ -143,9 +121,9 @@ export default function HeroSection() {
                 transition={{ delay: 0.1, duration: 0.4 }}
                 className="inline-flex items-center gap-3 mb-6 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-sm border border-white/10"
               >
-                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: slide.accent }} />
+                <span className="w-2 h-2 rounded-full" style={{ backgroundColor: meta.accent }} />
                 <span className="text-[11px] uppercase tracking-[0.15em] font-semibold text-white/80">
-                  {slide.tag}
+                  {t(`slides.${current}.tag`)}
                 </span>
               </motion.div>
 
@@ -155,9 +133,9 @@ export default function HeroSection() {
                 transition={{ delay: 0.15, duration: 0.5 }}
                 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight"
               >
-                {slide.title}{" "}
-                <span className="text-brand-gold">{slide.highlight}</span>{" "}
-                {slide.titleEnd}
+                {t(`slides.${current}.title`)}{" "}
+                <span className="text-brand-gold">{t(`slides.${current}.highlight`)}</span>{" "}
+                {t(`slides.${current}.titleEnd`)}
               </motion.h1>
 
               <motion.p
@@ -166,7 +144,7 @@ export default function HeroSection() {
                 transition={{ delay: 0.3, duration: 0.4 }}
                 className="mt-5 text-sm md:text-base text-white/55 max-w-lg leading-relaxed"
               >
-                {slide.desc}
+                {t(`slides.${current}.desc`)}
               </motion.p>
 
               <motion.div
@@ -176,17 +154,17 @@ export default function HeroSection() {
                 className="mt-7 flex flex-wrap items-center gap-3"
               >
                 <Link
-                  href={slide.href}
+                  href={meta.href}
                   className="group inline-flex items-center gap-2.5 px-6 py-3 bg-brand-gold text-brand-navy text-sm font-bold rounded hover:bg-brand-gold-light transition-colors"
                 >
-                  {slide.cta}
+                  {t(`slides.${current}.cta`)}
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                 </Link>
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white/80 text-sm font-medium rounded hover:bg-white/10 transition-colors"
                 >
-                  Fale Conosco
+                  {t("contactCta")}
                 </Link>
               </motion.div>
             </motion.div>
@@ -198,7 +176,7 @@ export default function HeroSection() {
       <div className="absolute bottom-8 left-0 right-0 z-10">
         <div className="mx-auto max-w-[1340px] px-6 lg:px-10">
           <div className="flex items-center gap-2">
-            {slides.map((_, i) => (
+            {slidesMeta.map((_, i) => (
               <button
                 key={i}
                 onClick={() => goTo(i)}

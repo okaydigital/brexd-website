@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
 const partnersRow1 = [
@@ -23,6 +24,8 @@ function LogoBox({ name }: { name: string }) {
 }
 
 export default function PartnersSection() {
+  const t = useTranslations("homePartners");
+
   return (
     <section className="py-20 md:py-24 bg-white overflow-hidden">
       <div className="mx-auto max-w-[1340px] px-6 lg:px-10 mb-10">
@@ -31,15 +34,15 @@ export default function PartnersSection() {
             <div className="inline-flex items-center gap-3 mb-4">
               <div className="h-px w-10 bg-brand-gold" />
               <span className="text-xs uppercase tracking-[0.2em] text-brand-gold font-semibold">
-                Parceiros & Clientes
+                {t("tag")}
               </span>
               <div className="h-px w-10 bg-brand-gold" />
             </div>
             <h2 className="text-3xl md:text-4xl font-black text-brand-navy leading-tight">
-              Empresas que <span className="text-brand-gold">confiam</span> na BREXD
+              {t("title")} <span className="text-brand-gold">{t("titleHighlight")}</span> {t("titleEnd")}
             </h2>
             <p className="mt-3 text-sm text-gray-400 max-w-md mx-auto">
-              Multinacionais e líderes de mercado que escolhem a BREXD como parceira estratégica.
+              {t("subtitle")}
             </p>
           </div>
         </ScrollReveal>

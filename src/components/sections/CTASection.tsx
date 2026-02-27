@@ -3,9 +3,12 @@
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight, Mail, Phone } from "lucide-react";
+import { useTranslations } from "next-intl";
 import ScrollReveal from "@/components/animations/ScrollReveal";
 
 export default function CTASection() {
+  const t = useTranslations("homeCta");
+
   return (
     <section className="relative py-24 md:py-32 overflow-hidden">
       <div className="absolute inset-0">
@@ -26,18 +29,17 @@ export default function CTASection() {
           <div className="text-center max-w-2xl mx-auto">
             <div className="inline-flex items-center gap-3 mb-5 px-4 py-1.5 rounded-full bg-brand-gold/10 border border-brand-gold/20">
               <span className="text-[11px] uppercase tracking-[0.15em] text-brand-gold font-bold">
-                Próximo Passo
+                {t("tag")}
               </span>
             </div>
 
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white leading-tight">
-              Vamos construir o futuro{" "}
-              <span className="text-brand-gold">juntos?</span>
+              {t("title")}{" "}
+              <span className="text-brand-gold">{t("titleHighlight")}</span>
             </h2>
 
             <p className="mt-5 text-base text-white/50 max-w-lg mx-auto leading-relaxed">
-              Descubra como a BREXD pode impulsionar seus negócios entre continentes.
-              Nossa equipe está pronta para atender você.
+              {t("desc")}
             </p>
 
             <div className="mt-8 flex flex-wrap justify-center gap-4">
@@ -45,22 +47,22 @@ export default function CTASection() {
                 href="/contact"
                 className="group inline-flex items-center gap-2.5 px-7 py-3.5 bg-brand-gold text-brand-navy text-sm font-bold rounded hover:bg-brand-gold-light transition-colors"
               >
-                Enviar Mensagem
+                {t("cta")}
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </Link>
               <a
-                href="mailto:contato@brexd.com"
+                href={`mailto:${t("email")}`}
                 className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/15 text-white/80 text-sm font-medium rounded hover:bg-white/5 transition-colors"
               >
                 <Mail className="w-4 h-4" />
-                contato@brexd.com
+                {t("email")}
               </a>
               <a
-                href="tel:+551130458800"
+                href={`tel:${t("phone").replace(/[\s()-]/g, "")}`}
                 className="inline-flex items-center gap-2 px-7 py-3.5 border border-white/15 text-white/80 text-sm font-medium rounded hover:bg-white/5 transition-colors"
               >
                 <Phone className="w-4 h-4" />
-                +55 (11) 3045-8800
+                {t("phone")}
               </a>
             </div>
           </div>

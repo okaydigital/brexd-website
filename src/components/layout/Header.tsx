@@ -1,33 +1,35 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { Link, usePathname } from "@/i18n/navigation";
+import { useState, useEffect, useTransition } from "react";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { useLocale, useTranslations } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-const navLinks = [
-  { label: "Início", href: "/" as const },
-  { label: "Sobre", href: "/about" as const },
-  {
-    label: "Segmentos",
-    href: "/segments" as const,
-    children: [
-      { label: "Exportação", href: "/segments/export" as const },
-      { label: "Importação", href: "/segments/import" as const },
-      { label: "Engenharia", href: "/segments/engineering" as const },
-      { label: "Agronegócio", href: "/segments/agribusiness" as const },
-      { label: "Tecnologia", href: "/segments/technology" as const },
-    ],
-  },
-  { label: "Projetos", href: "/projects" as const },
-  { label: "Parceiros", href: "/partners" as const },
-  { label: "Insights", href: "/blog" as const },
-  { label: "Contato", href: "/contact" as const },
-];
+const flags: Record<string, { emoji: string; label: string }> = {
+  "pt-BR": { emoji: "🇧🇷", label: "Português" },
+  en: { emoji: "🇺🇸", label: "English" },
+  zh: { emoji: "🇨🇳", label: "中文" },
+};
+
+const segmentHrefs = [
+  "/segments/export",
+  "/segments/import",
+  "/segments/engineering",
+  "/segments/agribusiness",
+  "/segments/technology",
+] as const;
+
+const segmentKeys = ["export", "import", "engineering", "agribusiness", "technology"] as const;
 
 export default function Header() {
   const pathname = usePathname();
+  const router = useRouter();
+  const locale = useLocale();
+  const t = useTranslations("nav");
+  const [, startTransition] = useTransition();
+
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [segmentsOpen, setSegmentsOpen] = useState(false);
@@ -46,6 +48,29 @@ export default function Header() {
   }, [pathname]);
 
   const showDark = isHomePage && !scrolled;
+
+  const switchLocale = (newLocale: string) => {
+    startTransition(() => {
+      router.replace(pathname, { locale: newLocale as "pt-BR" | "en" | "zh" });
+    });
+  };
+
+  const navLinks = [
+    { label: t("home"), href: "/" as const },
+    { label: t("about"), href: "/about" as const },
+    {
+      label: t("segments"),
+      href: "/segments" as const,
+      children: segmentKeys.map((key, i) => ({
+        label: t(key),
+        href: segmentHrefs[i],
+      })),
+    },
+    { label: t("projects"), href: "/projects" as const },
+    { label: t("partners"), href: "/partners" as const },
+    { label: t("blog"), href: "/blog" as const },
+    { label: t("contact"), href: "/contact" as const },
+  ];
 
   return (
     <header
@@ -80,7 +105,7 @@ export default function Header() {
             if (hasChildren) {
               return (
                 <div
-                  key={link.label}
+                  key={link.href}
                   className="relative group"
                   onMouseEnter={() => setSegmentsOpen(true)}
                   onMouseLeave={() => setSegmentsOpen(false)}
@@ -108,7 +133,7 @@ export default function Header() {
                       >
                         {link.children.map((child) => (
                           <Link
-                            key={child.label}
+                            key={child.href}
                             href={child.href}
                             className={cn(
                               "flex items-center px-3.5 py-2.5 text-[13px] rounded-md transition-colors",
@@ -129,7 +154,7 @@ export default function Header() {
 
             return (
               <Link
-                key={link.label}
+                key={link.href}
                 href={link.href}
                 className={cn(
                   "px-3.5 py-2 text-[13px] font-medium transition-colors rounded-md",
@@ -144,13 +169,34 @@ export default function Header() {
           })}
         </nav>
 
-        {/* Right side */}
+        {/* Right side — language switcher + CTA */}
         <div className="hidden lg:flex items-center gap-2.5">
+          {/* Language switcher */}
+          <div className="flex items-center gap-1 mr-1">
+            {Object.entries(flags).map(([loc, { emoji }]) => (
+              <button
+                key={loc}
+                onClick={() => switchLocale(loc)}
+                className={cn(
+                  "text-lg w-8 h-8 flex items-center justify-center rounded-md transition-all",
+                  locale === loc
+                    ? "bg-brand-gold/15 ring-1 ring-brand-gold/40 scale-110"
+                    : showDark
+                      ? "opacity-50 hover:opacity-100 hover:bg-white/10"
+                      : "opacity-40 hover:opacity-100 hover:bg-gray-100"
+                )}
+                title={flags[loc].label}
+              >
+                {emoji}
+              </button>
+            ))}
+          </div>
+
           <Link
             href="/contact"
             className="px-5 py-2 text-[13px] font-semibold bg-brand-green text-white rounded-md hover:bg-brand-green-light transition-colors"
           >
-            Fale Conosco
+            {t("getInTouch")}
           </Link>
         </div>
 
@@ -158,7 +204,7 @@ export default function Header() {
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
           className={cn("lg:hidden p-2", showDark ? "text-white" : "text-gray-700")}
-          aria-label="Alternar menu"
+          aria-label="Toggle menu"
         >
           {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
         </button>
@@ -180,7 +226,7 @@ export default function Header() {
 
                 if (hasChildren) {
                   return (
-                    <div key={link.label}>
+                    <div key={link.href}>
                       <button
                         onClick={() => setSegmentsOpen(!segmentsOpen)}
                         className="flex w-full items-center justify-between px-3 py-2.5 text-sm text-gray-600 hover:text-gray-900 rounded-md"
@@ -198,7 +244,7 @@ export default function Header() {
                           >
                             {link.children.map((child) => (
                               <Link
-                                key={child.label}
+                                key={child.href}
                                 href={child.href}
                                 className="block px-3 py-2 text-sm text-gray-400 hover:text-gray-700"
                               >
@@ -214,7 +260,7 @@ export default function Header() {
 
                 return (
                   <Link
-                    key={link.label}
+                    key={link.href}
                     href={link.href}
                     className="px-3 py-2.5 text-sm text-gray-600 hover:text-gray-900 rounded-md"
                   >
@@ -223,12 +269,30 @@ export default function Header() {
                 );
               })}
 
+              {/* Mobile language switcher */}
               <div className="mt-3 pt-3 border-t border-gray-100">
+                <div className="flex items-center gap-2 px-3 mb-3">
+                  {Object.entries(flags).map(([loc, { emoji, label }]) => (
+                    <button
+                      key={loc}
+                      onClick={() => switchLocale(loc)}
+                      className={cn(
+                        "flex items-center gap-1.5 px-3 py-1.5 rounded-md text-sm transition-all",
+                        locale === loc
+                          ? "bg-brand-gold/15 ring-1 ring-brand-gold/40 font-semibold text-brand-navy"
+                          : "text-gray-500 hover:bg-gray-100"
+                      )}
+                    >
+                      <span className="text-base">{emoji}</span>
+                      <span className="text-xs">{label}</span>
+                    </button>
+                  ))}
+                </div>
                 <Link
                   href="/contact"
                   className="block px-4 py-2.5 text-center text-sm font-semibold bg-brand-navy text-white rounded-md"
                 >
-                  Fale Conosco
+                  {t("getInTouch")}
                 </Link>
               </div>
             </nav>
